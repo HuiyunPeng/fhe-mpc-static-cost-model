@@ -1,6 +1,7 @@
 import json
 import threading
 import time
+import resource
 from contextlib import contextmanager
 from typing import Any, Dict, Optional
 
@@ -31,6 +32,17 @@ class PrimitiveTracer:
         self.high_level_ops = []
         self.primitive_calls = []
         self._local.current_op_id = None
+    
+    @staticmethod
+    def _get_peak_mem_bytes():
+        """Best-effort peak RSS in bytes; returns None if unavailable."""
+        try:
+            usage = resource.getrusage(resource.RUSAGE_SELF)
+            # ru_maxrss is kilobytes on Linux, bytes on macOS; normalize to bytes.
+            peak = usage.ru_maxrss
+            return int(peak * 1024) if peak and peak < 10**9 else int(peak)
+        except Exception:
+            return None
 
     @contextmanager
     def op_context(
@@ -64,6 +76,9 @@ class PrimitiveTracer:
             yield op_id
         finally:
             op_entry["duration_sec"] = time.time() - start
+            peak_mem = self._get_peak_mem_bytes()
+            if peak_mem is not None:
+                op_entry["peak_mem_bytes"] = peak_mem
             self._local.current_op_id = parent
 
     def log_primitive(self, primitive: str, params: Optional[Dict[str, Any]] = None):

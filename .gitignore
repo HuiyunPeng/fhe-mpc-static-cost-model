@@ -205,3 +205,6 @@ go.work.sum
 
 # env file
 .env
+
+# Datasets
+data/MNIST

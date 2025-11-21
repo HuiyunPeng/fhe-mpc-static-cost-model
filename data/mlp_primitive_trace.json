@@ -2,8 +2,8 @@
   "ops": [
     {
       "op_id": 0,
-      "op_type": "Conv2d",
-      "name": "conv1",
+      "op_type": "Linear",
+      "name": "fc1",
       "params": {
         "level": 5,
         "depth": 1,
@@ -15,9 +15,7 @@
         ],
         "output_shape": [
           1,
-          5,
-          14,
-          14
+          128
         ],
         "fhe_input_shape": [
           1,
@@ -27,76 +25,71 @@
         ],
         "fhe_output_shape": [
           1,
-          2,
-          28,
-          28
+          128
         ],
         "bsgs_ratio": 2.0,
-        "kernel_size": [
-          2,
-          2
-        ],
-        "stride": [
-          2,
-          2
-        ],
-        "padding": [
-          0,
-          0
-        ],
-        "dilation": [
-          1,
-          1
-        ],
-        "groups": 1,
-        "in_channels": 1,
-        "out_channels": 5
+        "in_features": 784,
+        "out_features": 128
       },
-      "duration_sec": 0.07112884521484375
+      "duration_sec": 0.17592740058898926,
+      "peak_mem_bytes": 2249953280
     },
     {
       "op_id": 1,
-      "op_type": "Linear",
-      "name": "fc1",
-      "params": {
-        "level": 3,
-        "depth": 1,
-        "input_shape": [
-          1,
-          5,
-          14,
-          14
-        ],
-        "output_shape": [
-          1,
-          100
-        ],
-        "fhe_input_shape": [
-          1,
-          2,
-          28,
-          28
-        ],
-        "fhe_output_shape": [
-          1,
-          100
-        ],
-        "bsgs_ratio": 2.0,
-        "in_features": 980,
-        "out_features": 100
-      },
-      "duration_sec": 0.12354469299316406
+      "op_type": "Quad",
+      "name": "act1",
+      "params": {},
+      "duration_sec": 0.014579057693481445,
+      "peak_mem_bytes": 2249953280
     },
     {
       "op_id": 2,
       "op_type": "Linear",
       "name": "fc2",
       "params": {
+        "level": 3,
+        "depth": 1,
+        "input_shape": [
+          1,
+          128
+        ],
+        "output_shape": [
+          1,
+          128
+        ],
+        "fhe_input_shape": [
+          1,
+          128
+        ],
+        "fhe_output_shape": [
+          1,
+          128
+        ],
+        "bsgs_ratio": 2.0,
+        "in_features": 128,
+        "out_features": 128
+      },
+      "duration_sec": 0.12357783317565918,
+      "peak_mem_bytes": 2249953280
+    },
+    {
+      "op_id": 3,
+      "op_type": "Quad",
+      "name": "act2",
+      "params": {},
+      "duration_sec": 0.011747598648071289,
+      "peak_mem_bytes": 2249953280
+    },
+    {
+      "op_id": 4,
+      "op_type": "Linear",
+      "name": "fc3",
+      "params": {
         "level": 1,
         "depth": 1,
         "input_shape": [
           1,
-          100
+          128
         ],
         "output_shape": [
           1,
@@ -104,17 +97,18 @@
         ],
         "fhe_input_shape": [
           1,
-          100
+          128
         ],
         "fhe_output_shape": [
           1,
           10
         ],
         "bsgs_ratio": 2.0,
-        "in_features": 100,
+        "in_features": 128,
         "out_features": 10
       },
-      "duration_sec": 0.03827023506164551
+      "duration_sec": 0.0431368350982666,
+      "peak_mem_bytes": 2249953280
     }
   ],
   "primitives": [
@@ -129,7 +123,7 @@
         "level": 5,
         "embedding": "hybrid"
       },
-      "timestamp": 1763746359.2880306
+      "timestamp": 1763753825.3748362
     },
     {
       "op_id": 0,
@@ -137,7 +131,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763746359.3288627
+      "timestamp": 1763753825.476012
     },
     {
       "op_id": 0,
@@ -146,7 +140,7 @@
         "amount": 4096,
         "in_place": false
       },
-      "timestamp": 1763746359.3347476
+      "timestamp": 1763753825.4820566
     },
     {
       "op_id": 0,
@@ -155,7 +149,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763746359.3416939
+      "timestamp": 1763753825.4889195
     },
     {
       "op_id": 0,
@@ -164,7 +158,7 @@
         "amount": 2048,
         "in_place": false
       },
-      "timestamp": 1763746359.3459163
+      "timestamp": 1763753825.4931479
     },
     {
       "op_id": 0,
@@ -173,7 +167,79 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763746359.3528588
+      "timestamp": 1763753825.50012
+    },
+    {
+      "op_id": 0,
+      "primitive": "HRot",
+      "params": {
+        "amount": 1024,
+        "in_place": false
+      },
+      "timestamp": 1763753825.5043252
+    },
+    {
+      "op_id": 0,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763753825.5112684
+    },
+    {
+      "op_id": 0,
+      "primitive": "HRot",
+      "params": {
+        "amount": 512,
+        "in_place": false
+      },
+      "timestamp": 1763753825.515451
+    },
+    {
+      "op_id": 0,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763753825.5223005
+    },
+    {
+      "op_id": 0,
+      "primitive": "HRot",
+      "params": {
+        "amount": 256,
+        "in_place": false
+      },
+      "timestamp": 1763753825.5264812
+    },
+    {
+      "op_id": 0,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763753825.5334027
+    },
+    {
+      "op_id": 0,
+      "primitive": "HRot",
+      "params": {
+        "amount": 128,
+        "in_place": false
+      },
+      "timestamp": 1763753825.5376143
+    },
+    {
+      "op_id": 0,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763753825.544458
     },
     {
       "op_id": 0,
@@ -182,26 +248,26 @@
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763746359.3570511
+      "timestamp": 1763753825.5486512
     },
     {
-      "op_id": null,
+      "op_id": 1,
       "primitive": "HMult",
       "params": {
         "in_place": false
       },
-      "timestamp": 1763746359.3876545
+      "timestamp": 1763753825.5510461
     },
     {
-      "op_id": null,
+      "op_id": 1,
       "primitive": "Rescale",
       "params": {
         "origin": "mul_ciphertext"
       },
-      "timestamp": 1763746359.3986478
+      "timestamp": 1763753825.558432
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "MatVec",
       "params": {
         "transform_id": 1,
@@ -211,151 +277,151 @@
         "level": 3,
         "embedding": "hybrid"
       },
-      "timestamp": 1763746359.4095402
+      "timestamp": 1763753825.5677733
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "Rescale",
       "params": {
         "in_place": false
       },
-      "timestamp": 1763746359.471503
+      "timestamp": 1763753825.6294265
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 4096,
         "in_place": false
       },
-      "timestamp": 1763746359.47695
+      "timestamp": 1763753825.6348662
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763746359.481851
+      "timestamp": 1763753825.6397996
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 2048,
         "in_place": false
       },
-      "timestamp": 1763746359.4860373
+      "timestamp": 1763753825.6439729
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763746359.4908726
+      "timestamp": 1763753825.6487937
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 1024,
         "in_place": false
       },
-      "timestamp": 1763746359.4950209
+      "timestamp": 1763753825.6529486
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763746359.4998312
+      "timestamp": 1763753825.6577926
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 512,
         "in_place": false
       },
-      "timestamp": 1763746359.5039756
+      "timestamp": 1763753825.6619813
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763746359.5088553
+      "timestamp": 1763753825.666889
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 256,
         "in_place": false
       },
-      "timestamp": 1763746359.5130067
+      "timestamp": 1763753825.6710625
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763746359.517809
+      "timestamp": 1763753825.6760175
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 128,
         "in_place": false
       },
-      "timestamp": 1763746359.5219505
+      "timestamp": 1763753825.680186
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763746359.52676
+      "timestamp": 1763753825.685007
     },
     {
-      "op_id": 1,
+      "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763746359.5309198
+      "timestamp": 1763753825.6891649
     },
     {
-      "op_id": null,
+      "op_id": 3,
       "primitive": "HMult",
       "params": {
         "in_place": false
       },
-      "timestamp": 1763746359.533119
+      "timestamp": 1763753825.6914303
     },
     {
-      "op_id": null,
+      "op_id": 3,
       "primitive": "Rescale",
       "params": {
         "origin": "mul_ciphertext"
       },
-      "timestamp": 1763746359.5381248
+      "timestamp": 1763753825.6964014
     },
     {
-      "op_id": 2,
+      "op_id": 4,
       "primitive": "MatVec",
       "params": {
         "transform_id": 2,
@@ -365,24 +431,24 @@
         "level": 1,
         "embedding": "hybrid"
       },
-      "timestamp": 1763746359.5490303
+      "timestamp": 1763753825.7073653
     },
     {
-      "op_id": 2,
+      "op_id": 4,
       "primitive": "Rescale",
       "params": {
         "in_place": false
       },
-      "timestamp": 1763746359.5803833
+      "timestamp": 1763753825.743502
     },
     {
-      "op_id": 2,
+      "op_id": 4,
       "primitive": "HAdd",
       "params": {
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763746359.5852096
+      "timestamp": 1763753825.7484026
     }
   ]
 }

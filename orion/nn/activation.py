@@ -1,4 +1,5 @@
 import math 
+from contextlib import nullcontext
 
 import torch
 import torch.nn as nn
@@ -52,10 +53,14 @@ class Quad(Module):
         super().__init__()
         self.set_depth(1)
 
+    @timer
     def forward(self, x):
-        out = x * x 
-        if self.he_mode:
-            out.set_scale(x.scale()) 
+        # Record quad operations when tracing is enabled (FHE mode only).
+        ctx = self._trace_context() if self.he_mode else nullcontext()
+        with ctx:
+            out = x * x 
+            if self.he_mode:
+                out.set_scale(x.scale()) 
         return out
     
 
