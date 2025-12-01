@@ -1,0 +1,9235 @@
+{
+  "ops": [
+    {
+      "op_id": 0,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.001970529556274414,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 1,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00016617774963378906,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 2,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0017044544219970703,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 3,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00015473365783691406,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 4,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016293525695800781,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 5,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00014591217041015625,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 6,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016121864318847656,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 7,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00013446807861328125,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 8,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016472339630126953,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 9,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.000148773193359375,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 10,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.00160980224609375,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 11,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00014209747314453125,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 12,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0017094612121582031,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 13,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.000156402587890625,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 14,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.001611948013305664,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 15,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00014019012451171875,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 16,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.001638174057006836,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 17,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00013828277587890625,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 18,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0017566680908203125,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 19,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00014162063598632812,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 20,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0018596649169921875,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 21,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.0001518726348876953,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 22,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0018112659454345703,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 23,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00013589859008789062,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 24,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016744136810302734,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 25,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00020599365234375,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 26,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016856193542480469,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 27,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00015735626220703125,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 28,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0017325878143310547,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 29,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.000141143798828125,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 30,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016455650329589844,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 31,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00016689300537109375,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 32,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016055107116699219,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 33,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00014090538024902344,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 34,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016143321990966797,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 35,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.0001480579376220703,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 36,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 1,
+        "postscale": 1,
+        "he_mode": false
+      },
+      "duration_sec": 0.0016598701477050781,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 2
+    },
+    {
+      "op_id": 37,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 0.00018453598022460938,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 38,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 5.3882598876953125e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 39,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.600120544433594e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 40,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 6.461143493652344e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 41,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.4345855712890625e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 42,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 6.532669067382812e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 43,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.647804260253906e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 44,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 6.0558319091796875e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 45,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 1.9073486328125e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 46,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 6.175041198730469e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 47,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.506111145019531e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 48,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 6.341934204101562e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 49,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.8623809814453125e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 50,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 6.29425048828125e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 51,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.695487976074219e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 52,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 2.9325485229492188e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 53,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.838539123535156e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 54,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.482269287109375e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 55,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.124641418457031e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 56,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.482269287109375e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 57,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.7670135498046875e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 58,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.315376281738281e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 59,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.814697265625e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 60,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.363059997558594e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 61,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.7670135498046875e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 62,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.38690185546875e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 63,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.719329833984375e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 64,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.838539123535156e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 65,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.743171691894531e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 66,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.3392181396484375e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 67,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.719329833984375e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 68,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.361701965332031e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 69,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.315376281738281e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 70,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.3392181396484375e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 71,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.7670135498046875e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 72,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.743171691894531e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 73,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.790855407714844e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 74,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 4.363059997558594e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 75,
+      "op_type": "Mult",
+      "name": null,
+      "params": {
+        "he_mode": false
+      },
+      "duration_sec": 3.790855407714844e-05,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1
+    },
+    {
+      "op_id": 76,
+      "op_type": "Conv2d",
+      "name": "conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          3,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_input_shape": [
+          1,
+          3,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 3,
+        "out_channels": 16
+      },
+      "duration_sec": 0.4767119884490967,
+      "peak_mem_bytes": 31457280,
+      "peak_mem_samples": 443
+    },
+    {
+      "op_id": 77,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.2,
+        "postscale": 5
+      },
+      "duration_sec": 12.721007823944092,
+      "peak_mem_bytes": 656408576,
+      "peak_mem_samples": 11799
+    },
+    {
+      "op_id": 78,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.16666666666666666,
+        "postscale": 6,
+        "he_mode": true
+      },
+      "duration_sec": 15.755778074264526,
+      "peak_mem_bytes": 50331648,
+      "peak_mem_samples": 14119
+    },
+    {
+      "op_id": 79,
+      "op_type": "Mult",
+      "name": "act_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.03188776969909668,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 27
+    },
+    {
+      "op_id": 80,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 15.608511924743652,
+      "peak_mem_bytes": 45088768,
+      "peak_mem_samples": 14006
+    },
+    {
+      "op_id": 81,
+      "op_type": "Chebyshev",
+      "name": "act_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6825313568115234,
+      "peak_mem_bytes": 37748736,
+      "peak_mem_samples": 617
+    },
+    {
+      "op_id": 82,
+      "op_type": "Chebyshev",
+      "name": "act_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33628416061401367,
+      "peak_mem_bytes": 2097152,
+      "peak_mem_samples": 302
+    },
+    {
+      "op_id": 83,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.468550443649292,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11233
+    },
+    {
+      "op_id": 84,
+      "op_type": "Chebyshev",
+      "name": "act_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0098614692687988,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 914
+    },
+    {
+      "op_id": 85,
+      "op_type": "Mult",
+      "name": "act_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05934023857116699,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 86,
+      "op_type": "Conv2d",
+      "name": "layers_0_0_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 16,
+        "out_channels": 16
+      },
+      "duration_sec": 0.46521639823913574,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 432
+    },
+    {
+      "op_id": 87,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.487164974212646,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11595
+    },
+    {
+      "op_id": 88,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 15.711969137191772,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 14107
+    },
+    {
+      "op_id": 89,
+      "op_type": "Mult",
+      "name": "layers_0_0_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024990081787109375,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 90,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 15.594433546066284,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 14015
+    },
+    {
+      "op_id": 91,
+      "op_type": "Chebyshev",
+      "name": "layers_0_0_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6681649684906006,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 603
+    },
+    {
+      "op_id": 92,
+      "op_type": "Chebyshev",
+      "name": "layers_0_0_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33588457107543945,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 303
+    },
+    {
+      "op_id": 93,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.473024368286133,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11266
+    },
+    {
+      "op_id": 94,
+      "op_type": "Chebyshev",
+      "name": "layers_0_0_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0082409381866455,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 909
+    },
+    {
+      "op_id": 95,
+      "op_type": "Mult",
+      "name": "layers_0_0_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.059166669845581055,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 96,
+      "op_type": "Conv2d",
+      "name": "layers_0_0_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 16,
+        "out_channels": 16
+      },
+      "duration_sec": 0.4655132293701172,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 433
+    },
+    {
+      "op_id": 97,
+      "op_type": "Add",
+      "name": "layers_0_0_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.003318309783935547,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 98,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.486299514770508,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11594
+    },
+    {
+      "op_id": 99,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.25,
+        "postscale": 4,
+        "he_mode": true
+      },
+      "duration_sec": 16.125795125961304,
+      "peak_mem_bytes": 1193279488,
+      "peak_mem_samples": 14441
+    },
+    {
+      "op_id": 100,
+      "op_type": "Mult",
+      "name": "layers_0_0_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.025003910064697266,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 101,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 16.007545948028564,
+      "peak_mem_bytes": 1186988032,
+      "peak_mem_samples": 14330
+    },
+    {
+      "op_id": 102,
+      "op_type": "Chebyshev",
+      "name": "layers_0_0_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6678566932678223,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 600
+    },
+    {
+      "op_id": 103,
+      "op_type": "Chebyshev",
+      "name": "layers_0_0_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.3358018398284912,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 302
+    },
+    {
+      "op_id": 104,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.817875623703003,
+      "peak_mem_bytes": 1009778688,
+      "peak_mem_samples": 11514
+    },
+    {
+      "op_id": 105,
+      "op_type": "Chebyshev",
+      "name": "layers_0_0_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0671639442443848,
+      "peak_mem_bytes": 147849216,
+      "peak_mem_samples": 959
+    },
+    {
+      "op_id": 106,
+      "op_type": "Mult",
+      "name": "layers_0_0_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.061287641525268555,
+      "peak_mem_bytes": 6291456,
+      "peak_mem_samples": 56
+    },
+    {
+      "op_id": 107,
+      "op_type": "Conv2d",
+      "name": "layers_0_1_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 16,
+        "out_channels": 16
+      },
+      "duration_sec": 0.5024237632751465,
+      "peak_mem_bytes": 118489088,
+      "peak_mem_samples": 467
+    },
+    {
+      "op_id": 108,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.545416116714478,
+      "peak_mem_bytes": 274726912,
+      "peak_mem_samples": 11613
+    },
+    {
+      "op_id": 109,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 15.67490005493164,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 14052
+    },
+    {
+      "op_id": 110,
+      "op_type": "Mult",
+      "name": "layers_0_1_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.025037288665771484,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 111,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 15.564534664154053,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13956
+    },
+    {
+      "op_id": 112,
+      "op_type": "Chebyshev",
+      "name": "layers_0_1_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6670241355895996,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 603
+    },
+    {
+      "op_id": 113,
+      "op_type": "Chebyshev",
+      "name": "layers_0_1_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.3354473114013672,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 302
+    },
+    {
+      "op_id": 114,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.442943096160889,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11197
+    },
+    {
+      "op_id": 115,
+      "op_type": "Chebyshev",
+      "name": "layers_0_1_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.00653076171875,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 905
+    },
+    {
+      "op_id": 116,
+      "op_type": "Mult",
+      "name": "layers_0_1_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05910992622375488,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 117,
+      "op_type": "Conv2d",
+      "name": "layers_0_1_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 16,
+        "out_channels": 16
+      },
+      "duration_sec": 0.464754581451416,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 432
+    },
+    {
+      "op_id": 118,
+      "op_type": "Add",
+      "name": "layers_0_1_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.0028734207153320312,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 119,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.3333333333333333,
+        "postscale": 3
+      },
+      "duration_sec": 12.487276792526245,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11475
+    },
+    {
+      "op_id": 120,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.25,
+        "postscale": 4,
+        "he_mode": true
+      },
+      "duration_sec": 15.687283754348755,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 14098
+    },
+    {
+      "op_id": 121,
+      "op_type": "Mult",
+      "name": "layers_0_1_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024849653244018555,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 122,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 15.585649490356445,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 14017
+    },
+    {
+      "op_id": 123,
+      "op_type": "Chebyshev",
+      "name": "layers_0_1_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.667708158493042,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 609
+    },
+    {
+      "op_id": 124,
+      "op_type": "Chebyshev",
+      "name": "layers_0_1_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.3361973762512207,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 305
+    },
+    {
+      "op_id": 125,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.46397852897644,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11259
+    },
+    {
+      "op_id": 126,
+      "op_type": "Chebyshev",
+      "name": "layers_0_1_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0070102214813232,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 911
+    },
+    {
+      "op_id": 127,
+      "op_type": "Mult",
+      "name": "layers_0_1_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05904865264892578,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 128,
+      "op_type": "Conv2d",
+      "name": "layers_0_2_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 16,
+        "out_channels": 16
+      },
+      "duration_sec": 0.46483612060546875,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 432
+    },
+    {
+      "op_id": 129,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.47482681274414,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11583
+    },
+    {
+      "op_id": 130,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 15.70647382736206,
+      "peak_mem_bytes": 5242880,
+      "peak_mem_samples": 14126
+    },
+    {
+      "op_id": 131,
+      "op_type": "Mult",
+      "name": "layers_0_2_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024840116500854492,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 132,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 15.603930950164795,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 14015
+    },
+    {
+      "op_id": 133,
+      "op_type": "Chebyshev",
+      "name": "layers_0_2_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6671700477600098,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 601
+    },
+    {
+      "op_id": 134,
+      "op_type": "Chebyshev",
+      "name": "layers_0_2_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33533668518066406,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 302
+    },
+    {
+      "op_id": 135,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.486543655395508,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11512
+    },
+    {
+      "op_id": 136,
+      "op_type": "Chebyshev",
+      "name": "layers_0_2_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0060691833496094,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 929
+    },
+    {
+      "op_id": 137,
+      "op_type": "Mult",
+      "name": "layers_0_2_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.058994293212890625,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 55
+    },
+    {
+      "op_id": 138,
+      "op_type": "Conv2d",
+      "name": "layers_0_2_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 16,
+        "out_channels": 16
+      },
+      "duration_sec": 0.46412134170532227,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 431
+    },
+    {
+      "op_id": 139,
+      "op_type": "Add",
+      "name": "layers_0_2_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.0028541088104248047,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 140,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.433007001876831,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11656
+    },
+    {
+      "op_id": 141,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.25,
+        "postscale": 4,
+        "he_mode": true
+      },
+      "duration_sec": 15.654513835906982,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 14035
+    },
+    {
+      "op_id": 142,
+      "op_type": "Mult",
+      "name": "layers_0_2_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024773120880126953,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 143,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 15.55269742012024,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13934
+    },
+    {
+      "op_id": 144,
+      "op_type": "Chebyshev",
+      "name": "layers_0_2_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6670129299163818,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 616
+    },
+    {
+      "op_id": 145,
+      "op_type": "Chebyshev",
+      "name": "layers_0_2_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33519887924194336,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 307
+    },
+    {
+      "op_id": 146,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 12.43750548362732,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 11187
+    },
+    {
+      "op_id": 147,
+      "op_type": "Chebyshev",
+      "name": "layers_0_2_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0066540241241455,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 906
+    },
+    {
+      "op_id": 148,
+      "op_type": "Mult",
+      "name": "layers_0_2_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05909156799316406,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 149,
+      "op_type": "Conv2d",
+      "name": "layers_1_0_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "fhe_input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 16,
+        "out_channels": 32
+      },
+      "duration_sec": 0.4914979934692383,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 457
+    },
+    {
+      "op_id": 150,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.850573062896729,
+      "peak_mem_bytes": 636485632,
+      "peak_mem_samples": 10874
+    },
+    {
+      "op_id": 151,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.80631422996521,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13252
+    },
+    {
+      "op_id": 152,
+      "op_type": "Mult",
+      "name": "layers_1_0_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024843454360961914,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 153,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.703830003738403,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13182
+    },
+    {
+      "op_id": 154,
+      "op_type": "Chebyshev",
+      "name": "layers_1_0_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6668174266815186,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 608
+    },
+    {
+      "op_id": 155,
+      "op_type": "Chebyshev",
+      "name": "layers_1_0_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33547282218933105,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 302
+    },
+    {
+      "op_id": 156,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.579635858535767,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10435
+    },
+    {
+      "op_id": 157,
+      "op_type": "Chebyshev",
+      "name": "layers_1_0_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0071096420288086,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 908
+    },
+    {
+      "op_id": 158,
+      "op_type": "Mult",
+      "name": "layers_1_0_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05912065505981445,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 159,
+      "op_type": "Conv2d",
+      "name": "layers_1_0_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "output_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "fhe_input_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 32,
+        "out_channels": 32
+      },
+      "duration_sec": 0.9514620304107666,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 884
+    },
+    {
+      "op_id": 160,
+      "op_type": "Conv2d",
+      "name": "layers_1_0_shortcut_0",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "output_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "fhe_input_shape": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 16,
+        "out_channels": 32
+      },
+      "duration_sec": 0.25797009468078613,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 240
+    },
+    {
+      "op_id": 161,
+      "op_type": "Add",
+      "name": "layers_1_0_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.0026178359985351562,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 162,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.3333333333333333,
+        "postscale": 3
+      },
+      "duration_sec": 11.594319343566895,
+      "peak_mem_bytes": 1048576,
+      "peak_mem_samples": 10766
+    },
+    {
+      "op_id": 163,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.3333333333333333,
+        "postscale": 3,
+        "he_mode": true
+      },
+      "duration_sec": 14.815022230148315,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13288
+    },
+    {
+      "op_id": 164,
+      "op_type": "Mult",
+      "name": "layers_1_0_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024898767471313477,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 165,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.713491439819336,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13210
+    },
+    {
+      "op_id": 166,
+      "op_type": "Chebyshev",
+      "name": "layers_1_0_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.667888879776001,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 602
+    },
+    {
+      "op_id": 167,
+      "op_type": "Chebyshev",
+      "name": "layers_1_0_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.3355281352996826,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 302
+    },
+    {
+      "op_id": 168,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.588359594345093,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10459
+    },
+    {
+      "op_id": 169,
+      "op_type": "Chebyshev",
+      "name": "layers_1_0_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0077018737792969,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 910
+    },
+    {
+      "op_id": 170,
+      "op_type": "Mult",
+      "name": "layers_1_0_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.0590822696685791,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 171,
+      "op_type": "Conv2d",
+      "name": "layers_1_1_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "output_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "fhe_input_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 32,
+        "out_channels": 32
+      },
+      "duration_sec": 0.9519615173339844,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 884
+    },
+    {
+      "op_id": 172,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.609228610992432,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10706
+    },
+    {
+      "op_id": 173,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.833561658859253,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13309
+    },
+    {
+      "op_id": 174,
+      "op_type": "Mult",
+      "name": "layers_1_1_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024863243103027344,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 175,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.731790542602539,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13223
+    },
+    {
+      "op_id": 176,
+      "op_type": "Chebyshev",
+      "name": "layers_1_1_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6680386066436768,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 603
+    },
+    {
+      "op_id": 177,
+      "op_type": "Chebyshev",
+      "name": "layers_1_1_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.3357095718383789,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 304
+    },
+    {
+      "op_id": 178,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.607398986816406,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10478
+    },
+    {
+      "op_id": 179,
+      "op_type": "Chebyshev",
+      "name": "layers_1_1_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.007619857788086,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 908
+    },
+    {
+      "op_id": 180,
+      "op_type": "Mult",
+      "name": "layers_1_1_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.0590360164642334,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 181,
+      "op_type": "Conv2d",
+      "name": "layers_1_1_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "output_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "fhe_input_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 32,
+        "out_channels": 32
+      },
+      "duration_sec": 0.9507849216461182,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 883
+    },
+    {
+      "op_id": 182,
+      "op_type": "Add",
+      "name": "layers_1_1_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.002794504165649414,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 183,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.573890447616577,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10747
+    },
+    {
+      "op_id": 184,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.803463220596313,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13297
+    },
+    {
+      "op_id": 185,
+      "op_type": "Mult",
+      "name": "layers_1_1_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.02488875389099121,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 186,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.701647996902466,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13345
+    },
+    {
+      "op_id": 187,
+      "op_type": "Chebyshev",
+      "name": "layers_1_1_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.667604923248291,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 603
+    },
+    {
+      "op_id": 188,
+      "op_type": "Chebyshev",
+      "name": "layers_1_1_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.3348960876464844,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 304
+    },
+    {
+      "op_id": 189,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.579601526260376,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10450
+    },
+    {
+      "op_id": 190,
+      "op_type": "Chebyshev",
+      "name": "layers_1_1_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0077602863311768,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 910
+    },
+    {
+      "op_id": 191,
+      "op_type": "Mult",
+      "name": "layers_1_1_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.059067487716674805,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 192,
+      "op_type": "Conv2d",
+      "name": "layers_1_2_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "output_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "fhe_input_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 32,
+        "out_channels": 32
+      },
+      "duration_sec": 0.9513709545135498,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 884
+    },
+    {
+      "op_id": 193,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.593340396881104,
+      "peak_mem_bytes": 16777216,
+      "peak_mem_samples": 10651
+    },
+    {
+      "op_id": 194,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.811816215515137,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13283
+    },
+    {
+      "op_id": 195,
+      "op_type": "Mult",
+      "name": "layers_1_2_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024924516677856445,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 196,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.70958662033081,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13181
+    },
+    {
+      "op_id": 197,
+      "op_type": "Chebyshev",
+      "name": "layers_1_2_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6675593852996826,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 602
+    },
+    {
+      "op_id": 198,
+      "op_type": "Chebyshev",
+      "name": "layers_1_2_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.3355062007904053,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 304
+    },
+    {
+      "op_id": 199,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.585685968399048,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10482
+    },
+    {
+      "op_id": 200,
+      "op_type": "Chebyshev",
+      "name": "layers_1_2_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0058131217956543,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 905
+    },
+    {
+      "op_id": 201,
+      "op_type": "Mult",
+      "name": "layers_1_2_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05889391899108887,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 202,
+      "op_type": "Conv2d",
+      "name": "layers_1_2_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "output_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "fhe_input_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 32,
+        "out_channels": 32
+      },
+      "duration_sec": 0.9511528015136719,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 884
+    },
+    {
+      "op_id": 203,
+      "op_type": "Add",
+      "name": "layers_1_2_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.0027914047241210938,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 204,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.578094244003296,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10751
+    },
+    {
+      "op_id": 205,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.815257549285889,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13279
+    },
+    {
+      "op_id": 206,
+      "op_type": "Mult",
+      "name": "layers_1_2_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.0248868465423584,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 207,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.713517904281616,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13204
+    },
+    {
+      "op_id": 208,
+      "op_type": "Chebyshev",
+      "name": "layers_1_2_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.667102575302124,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 601
+    },
+    {
+      "op_id": 209,
+      "op_type": "Chebyshev",
+      "name": "layers_1_2_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.3354530334472656,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 303
+    },
+    {
+      "op_id": 210,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.593729019165039,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10453
+    },
+    {
+      "op_id": 211,
+      "op_type": "Chebyshev",
+      "name": "layers_1_2_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0076048374176025,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 912
+    },
+    {
+      "op_id": 212,
+      "op_type": "Mult",
+      "name": "layers_1_2_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05905795097351074,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 213,
+      "op_type": "Conv2d",
+      "name": "layers_2_0_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "output_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "fhe_input_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 32,
+        "out_channels": 64
+      },
+      "duration_sec": 0.7472939491271973,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 694
+    },
+    {
+      "op_id": 214,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.611263990402222,
+      "peak_mem_bytes": 656408576,
+      "peak_mem_samples": 10782
+    },
+    {
+      "op_id": 215,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.616106033325195,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13173
+    },
+    {
+      "op_id": 216,
+      "op_type": "Mult",
+      "name": "layers_2_0_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024819612503051758,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 217,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.513721466064453,
+      "peak_mem_bytes": 4194304,
+      "peak_mem_samples": 13082
+    },
+    {
+      "op_id": 218,
+      "op_type": "Chebyshev",
+      "name": "layers_2_0_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6679654121398926,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 599
+    },
+    {
+      "op_id": 219,
+      "op_type": "Chebyshev",
+      "name": "layers_2_0_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33562374114990234,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 306
+    },
+    {
+      "op_id": 220,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.388979196548462,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10326
+    },
+    {
+      "op_id": 221,
+      "op_type": "Chebyshev",
+      "name": "layers_2_0_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.007204532623291,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 913
+    },
+    {
+      "op_id": 222,
+      "op_type": "Mult",
+      "name": "layers_2_0_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05910682678222656,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 223,
+      "op_type": "Conv2d",
+      "name": "layers_2_0_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "fhe_input_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 64,
+        "out_channels": 64
+      },
+      "duration_sec": 1.4447507858276367,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1342
+    },
+    {
+      "op_id": 224,
+      "op_type": "Conv2d",
+      "name": "layers_2_0_shortcut_0",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          32,
+          16,
+          16
+        ],
+        "output_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "fhe_input_shape": [
+          1,
+          8,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 32,
+        "out_channels": 64
+      },
+      "duration_sec": 0.41609930992126465,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 387
+    },
+    {
+      "op_id": 225,
+      "op_type": "Add",
+      "name": "layers_2_0_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.002619504928588867,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 226,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.374186992645264,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10529
+    },
+    {
+      "op_id": 227,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.578757524490356,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 13090
+    },
+    {
+      "op_id": 228,
+      "op_type": "Mult",
+      "name": "layers_2_0_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.02489185333251953,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 229,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.47654914855957,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 12986
+    },
+    {
+      "op_id": 230,
+      "op_type": "Chebyshev",
+      "name": "layers_2_0_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6669588088989258,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 601
+    },
+    {
+      "op_id": 231,
+      "op_type": "Chebyshev",
+      "name": "layers_2_0_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33544063568115234,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 302
+    },
+    {
+      "op_id": 232,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.35617184638977,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10234
+    },
+    {
+      "op_id": 233,
+      "op_type": "Chebyshev",
+      "name": "layers_2_0_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0079753398895264,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 910
+    },
+    {
+      "op_id": 234,
+      "op_type": "Mult",
+      "name": "layers_2_0_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05905508995056152,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 235,
+      "op_type": "Conv2d",
+      "name": "layers_2_1_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "fhe_input_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 64,
+        "out_channels": 64
+      },
+      "duration_sec": 1.449479341506958,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1346
+    },
+    {
+      "op_id": 236,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.352550506591797,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10542
+    },
+    {
+      "op_id": 237,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.586828470230103,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 13075
+    },
+    {
+      "op_id": 238,
+      "op_type": "Mult",
+      "name": "layers_2_1_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024885177612304688,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 239,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.484493255615234,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 12977
+    },
+    {
+      "op_id": 240,
+      "op_type": "Chebyshev",
+      "name": "layers_2_1_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6673779487609863,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 605
+    },
+    {
+      "op_id": 241,
+      "op_type": "Chebyshev",
+      "name": "layers_2_1_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.34091734886169434,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 308
+    },
+    {
+      "op_id": 242,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.356035709381104,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10199
+    },
+    {
+      "op_id": 243,
+      "op_type": "Chebyshev",
+      "name": "layers_2_1_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0074903964996338,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 907
+    },
+    {
+      "op_id": 244,
+      "op_type": "Mult",
+      "name": "layers_2_1_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.05915260314941406,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 55
+    },
+    {
+      "op_id": 245,
+      "op_type": "Conv2d",
+      "name": "layers_2_1_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "fhe_input_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 64,
+        "out_channels": 64
+      },
+      "duration_sec": 1.4496865272521973,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1346
+    },
+    {
+      "op_id": 246,
+      "op_type": "Add",
+      "name": "layers_2_1_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.00287628173828125,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 247,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.348495721817017,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10538
+    },
+    {
+      "op_id": 248,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.601817607879639,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 13077
+    },
+    {
+      "op_id": 249,
+      "op_type": "Mult",
+      "name": "layers_2_1_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024915695190429688,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 250,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.498898267745972,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 12971
+    },
+    {
+      "op_id": 251,
+      "op_type": "Chebyshev",
+      "name": "layers_2_1_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6684365272521973,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 601
+    },
+    {
+      "op_id": 252,
+      "op_type": "Chebyshev",
+      "name": "layers_2_1_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33575892448425293,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 302
+    },
+    {
+      "op_id": 253,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.374451637268066,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10226
+    },
+    {
+      "op_id": 254,
+      "op_type": "Chebyshev",
+      "name": "layers_2_1_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0074615478515625,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 905
+    },
+    {
+      "op_id": 255,
+      "op_type": "Mult",
+      "name": "layers_2_1_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.059099674224853516,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 256,
+      "op_type": "Conv2d",
+      "name": "layers_2_2_conv1",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "fhe_input_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 64,
+        "out_channels": 64
+      },
+      "duration_sec": 1.4443790912628174,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1341
+    },
+    {
+      "op_id": 257,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.375872611999512,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10563
+    },
+    {
+      "op_id": 258,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.60112714767456,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 13119
+    },
+    {
+      "op_id": 259,
+      "op_type": "Mult",
+      "name": "layers_2_2_act1_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024947166442871094,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 260,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.498919486999512,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 13101
+    },
+    {
+      "op_id": 261,
+      "op_type": "Chebyshev",
+      "name": "layers_2_2_act1_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6674702167510986,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 603
+    },
+    {
+      "op_id": 262,
+      "op_type": "Chebyshev",
+      "name": "layers_2_2_act1_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33567357063293457,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 304
+    },
+    {
+      "op_id": 263,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.377830743789673,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10298
+    },
+    {
+      "op_id": 264,
+      "op_type": "Chebyshev",
+      "name": "layers_2_2_act1_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0073156356811523,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 908
+    },
+    {
+      "op_id": 265,
+      "op_type": "Mult",
+      "name": "layers_2_2_act1_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.0590364933013916,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 266,
+      "op_type": "Conv2d",
+      "name": "layers_2_2_conv2",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "fhe_input_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "in_channels": 64,
+        "out_channels": 64
+      },
+      "duration_sec": 1.4476861953735352,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 1345
+    },
+    {
+      "op_id": 267,
+      "op_type": "Add",
+      "name": "layers_2_2_add",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.002881765365600586,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 3
+    },
+    {
+      "op_id": 268,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 1,
+        "postscale": 1
+      },
+      "duration_sec": 11.361838340759277,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10550
+    },
+    {
+      "op_id": 269,
+      "op_type": "ReLU",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ],
+        "prescale": 0.5,
+        "postscale": 2,
+        "he_mode": true
+      },
+      "duration_sec": 14.589925765991211,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 13129
+    },
+    {
+      "op_id": 270,
+      "op_type": "Mult",
+      "name": "layers_2_2_act2_mult1",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.024932384490966797,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 23
+    },
+    {
+      "op_id": 271,
+      "op_type": "_Sign",
+      "name": null,
+      "params": {
+        "degrees": [
+          15,
+          15,
+          27
+        ]
+      },
+      "duration_sec": 14.48765254020691,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 13051
+    },
+    {
+      "op_id": 272,
+      "op_type": "Chebyshev",
+      "name": "layers_2_2_act2_sign_acts_0",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.6676328182220459,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 604
+    },
+    {
+      "op_id": 273,
+      "op_type": "Chebyshev",
+      "name": "layers_2_2_act2_sign_acts_1",
+      "params": {
+        "degree": 15,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": null
+      },
+      "duration_sec": 0.33565211296081543,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 305
+    },
+    {
+      "op_id": 274,
+      "op_type": "Bootstrap",
+      "name": null,
+      "params": {
+        "input_level": 1,
+        "prescale": 0.5,
+        "postscale": 2
+      },
+      "duration_sec": 11.363659858703613,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 10273
+    },
+    {
+      "op_id": 275,
+      "op_type": "Chebyshev",
+      "name": "layers_2_2_act2_sign_acts_2",
+      "params": {
+        "degree": 27,
+        "prescale": 1,
+        "constant": 0,
+        "output_scale": 1099507695617
+      },
+      "duration_sec": 1.0072712898254395,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 911
+    },
+    {
+      "op_id": 276,
+      "op_type": "Mult",
+      "name": "layers_2_2_act2_mult2",
+      "params": {
+        "he_mode": true
+      },
+      "duration_sec": 0.059078216552734375,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 54
+    },
+    {
+      "op_id": 277,
+      "op_type": "AdaptiveAvgPool2d",
+      "name": "avgpool",
+      "params": {
+        "level": 2,
+        "depth": 1,
+        "input_shape": [
+          1,
+          64,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          64,
+          1,
+          1
+        ],
+        "fhe_input_shape": [
+          1,
+          4,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          1,
+          32,
+          32
+        ],
+        "bsgs_ratio": 2.0,
+        "kernel_size": [
+          8,
+          8
+        ],
+        "stride": [
+          8,
+          8
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 64,
+        "in_channels": 64,
+        "out_channels": 64
+      },
+      "duration_sec": 0.6687822341918945,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 621
+    },
+    {
+      "op_id": 278,
+      "op_type": "Linear",
+      "name": "linear",
+      "params": {
+        "level": 1,
+        "depth": 1,
+        "input_shape": [
+          1,
+          64,
+          1,
+          1
+        ],
+        "output_shape": [
+          1,
+          10
+        ],
+        "fhe_input_shape": [
+          1,
+          1,
+          32,
+          32
+        ],
+        "fhe_output_shape": [
+          1,
+          10
+        ],
+        "bsgs_ratio": 2.0,
+        "in_features": 64,
+        "out_features": 10
+      },
+      "duration_sec": 0.24274182319641113,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 226
+    }
+  ],
+  "primitives": [
+    {
+      "op_id": 76,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 0,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764021.9092832
+    },
+    {
+      "op_id": 76,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764022.3485916
+    },
+    {
+      "op_id": 76,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764022.3594925
+    },
+    {
+      "op_id": 76,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764022.3786557
+    },
+    {
+      "op_id": 76,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764022.3835735
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764022.5518646
+    },
+    {
+      "op_id": 77,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764022.5545876
+    },
+    {
+      "op_id": 77,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764022.5573435
+    },
+    {
+      "op_id": 77,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764022.5653658
+    },
+    {
+      "op_id": 77,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764035.2687814
+    },
+    {
+      "op_id": 77,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764035.2729037
+    },
+    {
+      "op_id": 79,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764036.0480282
+    },
+    {
+      "op_id": 79,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764036.0566347
+    },
+    {
+      "op_id": 81,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764036.263817
+    },
+    {
+      "op_id": 82,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764037.205875
+    },
+    {
+      "op_id": 83,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764037.7115016
+    },
+    {
+      "op_id": 83,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764037.7143312
+    },
+    {
+      "op_id": 83,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764037.722333
+    },
+    {
+      "op_id": 83,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764050.175847
+    },
+    {
+      "op_id": 84,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764050.553335
+    },
+    {
+      "op_id": 85,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764051.7045648
+    },
+    {
+      "op_id": 85,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764051.7509787
+    },
+    {
+      "op_id": 78,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764051.7690341
+    },
+    {
+      "op_id": 86,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 1,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764052.0098
+    },
+    {
+      "op_id": 86,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764052.4380598
+    },
+    {
+      "op_id": 86,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764052.4483109
+    },
+    {
+      "op_id": 86,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764052.467407
+    },
+    {
+      "op_id": 86,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764052.4722834
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764052.6400073
+    },
+    {
+      "op_id": 87,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764052.6428294
+    },
+    {
+      "op_id": 87,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764052.645559
+    },
+    {
+      "op_id": 87,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764052.6535356
+    },
+    {
+      "op_id": 87,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764065.123134
+    },
+    {
+      "op_id": 87,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764065.1272447
+    },
+    {
+      "op_id": 89,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764065.876122
+    },
+    {
+      "op_id": 89,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764065.8803113
+    },
+    {
+      "op_id": 91,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764066.0844204
+    },
+    {
+      "op_id": 92,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764067.0125945
+    },
+    {
+      "op_id": 93,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764067.5180871
+    },
+    {
+      "op_id": 93,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764067.5208979
+    },
+    {
+      "op_id": 93,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764067.5289302
+    },
+    {
+      "op_id": 93,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764079.9869998
+    },
+    {
+      "op_id": 94,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764080.363107
+    },
+    {
+      "op_id": 95,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764081.5115092
+    },
+    {
+      "op_id": 95,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764081.557891
+    },
+    {
+      "op_id": 88,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764081.576171
+    },
+    {
+      "op_id": 96,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 2,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764081.817362
+    },
+    {
+      "op_id": 96,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764082.2459357
+    },
+    {
+      "op_id": 96,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764082.2561631
+    },
+    {
+      "op_id": 96,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764082.2752714
+    },
+    {
+      "op_id": 96,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764082.2801569
+    },
+    {
+      "op_id": 97,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764082.5475335
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764082.637862
+    },
+    {
+      "op_id": 98,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764082.6406305
+    },
+    {
+      "op_id": 98,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764082.6433609
+    },
+    {
+      "op_id": 98,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764082.6514156
+    },
+    {
+      "op_id": 98,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764095.120166
+    },
+    {
+      "op_id": 98,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764095.1242688
+    },
+    {
+      "op_id": 100,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764095.5056212
+    },
+    {
+      "op_id": 100,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764095.5098183
+    },
+    {
+      "op_id": 102,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764095.7141027
+    },
+    {
+      "op_id": 103,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764096.641948
+    },
+    {
+      "op_id": 104,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764097.147845
+    },
+    {
+      "op_id": 104,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764097.1506457
+    },
+    {
+      "op_id": 104,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764097.1586432
+    },
+    {
+      "op_id": 104,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764109.9616044
+    },
+    {
+      "op_id": 105,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764110.3449464
+    },
+    {
+      "op_id": 106,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764111.5542703
+    },
+    {
+      "op_id": 106,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764111.6027439
+    },
+    {
+      "op_id": 99,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764111.6212146
+    },
+    {
+      "op_id": 107,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 3,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764111.8649619
+    },
+    {
+      "op_id": 107,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764112.3290439
+    },
+    {
+      "op_id": 107,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764112.3399515
+    },
+    {
+      "op_id": 107,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764112.3597639
+    },
+    {
+      "op_id": 107,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764112.3646567
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764112.5346537
+    },
+    {
+      "op_id": 108,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764112.5374897
+    },
+    {
+      "op_id": 108,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764112.5402162
+    },
+    {
+      "op_id": 108,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764112.5481918
+    },
+    {
+      "op_id": 108,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764125.076164
+    },
+    {
+      "op_id": 108,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764125.0802565
+    },
+    {
+      "op_id": 110,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764125.8267603
+    },
+    {
+      "op_id": 110,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764125.8309932
+    },
+    {
+      "op_id": 112,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764126.0360036
+    },
+    {
+      "op_id": 113,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764126.9633665
+    },
+    {
+      "op_id": 114,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764127.469166
+    },
+    {
+      "op_id": 114,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764127.4719892
+    },
+    {
+      "op_id": 114,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764127.479999
+    },
+    {
+      "op_id": 114,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764139.9080064
+    },
+    {
+      "op_id": 115,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764140.2854364
+    },
+    {
+      "op_id": 116,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764141.4267635
+    },
+    {
+      "op_id": 116,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764141.4730914
+    },
+    {
+      "op_id": 109,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764141.491483
+    },
+    {
+      "op_id": 117,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 4,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764141.7321856
+    },
+    {
+      "op_id": 117,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764142.1600442
+    },
+    {
+      "op_id": 117,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764142.1702535
+    },
+    {
+      "op_id": 117,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764142.1893554
+    },
+    {
+      "op_id": 117,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764142.1942253
+    },
+    {
+      "op_id": 118,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764142.4471953
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764142.5339084
+    },
+    {
+      "op_id": 119,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764142.5367043
+    },
+    {
+      "op_id": 119,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764142.5394254
+    },
+    {
+      "op_id": 119,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764142.5474236
+    },
+    {
+      "op_id": 119,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764155.0171413
+    },
+    {
+      "op_id": 119,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764155.0212367
+    },
+    {
+      "op_id": 121,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764155.3968349
+    },
+    {
+      "op_id": 121,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764155.4009583
+    },
+    {
+      "op_id": 123,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764155.6046348
+    },
+    {
+      "op_id": 124,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764156.5324774
+    },
+    {
+      "op_id": 125,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764157.0391767
+    },
+    {
+      "op_id": 125,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764157.0420372
+    },
+    {
+      "op_id": 125,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764157.0500655
+    },
+    {
+      "op_id": 125,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764169.4989815
+    },
+    {
+      "op_id": 126,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764169.875353
+    },
+    {
+      "op_id": 127,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764171.0165792
+    },
+    {
+      "op_id": 127,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764171.06289
+    },
+    {
+      "op_id": 120,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764171.0805886
+    },
+    {
+      "op_id": 128,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 5,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764171.323232
+    },
+    {
+      "op_id": 128,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764171.7511601
+    },
+    {
+      "op_id": 128,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764171.7613494
+    },
+    {
+      "op_id": 128,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764171.7804496
+    },
+    {
+      "op_id": 128,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764171.785339
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764171.9530056
+    },
+    {
+      "op_id": 129,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764171.9558187
+    },
+    {
+      "op_id": 129,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764171.958552
+    },
+    {
+      "op_id": 129,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764171.9665384
+    },
+    {
+      "op_id": 129,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764184.4238927
+    },
+    {
+      "op_id": 129,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764184.4279823
+    },
+    {
+      "op_id": 131,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764185.1664762
+    },
+    {
+      "op_id": 131,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764185.170491
+    },
+    {
+      "op_id": 133,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764185.3746245
+    },
+    {
+      "op_id": 134,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764186.3019345
+    },
+    {
+      "op_id": 135,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764186.8065143
+    },
+    {
+      "op_id": 135,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764186.809316
+    },
+    {
+      "op_id": 135,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764186.8173196
+    },
+    {
+      "op_id": 135,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764199.2888827
+    },
+    {
+      "op_id": 136,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764199.6647315
+    },
+    {
+      "op_id": 137,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764200.8045838
+    },
+    {
+      "op_id": 137,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764200.8508155
+    },
+    {
+      "op_id": 130,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764200.8695688
+    },
+    {
+      "op_id": 138,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 6,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764201.1098974
+    },
+    {
+      "op_id": 138,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764201.5371332
+    },
+    {
+      "op_id": 138,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764201.5473523
+    },
+    {
+      "op_id": 138,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764201.5664186
+    },
+    {
+      "op_id": 138,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764201.5712988
+    },
+    {
+      "op_id": 139,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764201.8235714
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764201.9106572
+    },
+    {
+      "op_id": 140,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764201.9133925
+    },
+    {
+      "op_id": 140,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764201.916126
+    },
+    {
+      "op_id": 140,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764201.9241006
+    },
+    {
+      "op_id": 140,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764214.3396583
+    },
+    {
+      "op_id": 140,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764214.343744
+    },
+    {
+      "op_id": 142,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764214.7174695
+    },
+    {
+      "op_id": 142,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764214.7215846
+    },
+    {
+      "op_id": 144,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764214.92502
+    },
+    {
+      "op_id": 145,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764215.8517227
+    },
+    {
+      "op_id": 146,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764216.3556514
+    },
+    {
+      "op_id": 146,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764216.3584464
+    },
+    {
+      "op_id": 146,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 16384
+      },
+      "timestamp": 1763764216.3664477
+    },
+    {
+      "op_id": 146,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764228.7890484
+    },
+    {
+      "op_id": 147,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764229.163954
+    },
+    {
+      "op_id": 148,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764230.3044164
+    },
+    {
+      "op_id": 148,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764230.3507423
+    },
+    {
+      "op_id": 141,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764230.3686943
+    },
+    {
+      "op_id": 149,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 7,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764230.613385
+    },
+    {
+      "op_id": 149,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764231.0440662
+    },
+    {
+      "op_id": 149,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764231.0542681
+    },
+    {
+      "op_id": 149,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764231.073438
+    },
+    {
+      "op_id": 149,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764231.078315
+    },
+    {
+      "op_id": 149,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764231.0973852
+    },
+    {
+      "op_id": 149,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764231.1022358
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764231.2694821
+    },
+    {
+      "op_id": 150,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764231.2722604
+    },
+    {
+      "op_id": 150,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764231.2749782
+    },
+    {
+      "op_id": 150,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764231.2829657
+    },
+    {
+      "op_id": 150,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764243.115978
+    },
+    {
+      "op_id": 150,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764243.1201622
+    },
+    {
+      "op_id": 152,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764243.8622277
+    },
+    {
+      "op_id": 152,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764243.8662696
+    },
+    {
+      "op_id": 154,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764244.0720415
+    },
+    {
+      "op_id": 155,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764245.0005968
+    },
+    {
+      "op_id": 156,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764245.5068011
+    },
+    {
+      "op_id": 156,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764245.5096297
+    },
+    {
+      "op_id": 156,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764245.5176342
+    },
+    {
+      "op_id": 156,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764257.0822372
+    },
+    {
+      "op_id": 157,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764257.4598494
+    },
+    {
+      "op_id": 158,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764258.6001506
+    },
+    {
+      "op_id": 158,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764258.6464314
+    },
+    {
+      "op_id": 151,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764258.6651268
+    },
+    {
+      "op_id": 159,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 9,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764258.9065754
+    },
+    {
+      "op_id": 159,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764259.7970774
+    },
+    {
+      "op_id": 159,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764259.8073454
+    },
+    {
+      "op_id": 159,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764259.826476
+    },
+    {
+      "op_id": 159,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764259.8313653
+    },
+    {
+      "op_id": 159,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764259.8505309
+    },
+    {
+      "op_id": 159,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764259.855386
+    },
+    {
+      "op_id": 160,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 8,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764260.225084
+    },
+    {
+      "op_id": 160,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764260.4220784
+    },
+    {
+      "op_id": 160,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764260.4323702
+    },
+    {
+      "op_id": 160,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764260.4514956
+    },
+    {
+      "op_id": 160,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764260.4563644
+    },
+    {
+      "op_id": 160,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764260.4754748
+    },
+    {
+      "op_id": 160,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764260.480327
+    },
+    {
+      "op_id": 161,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764260.7312443
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764260.8170729
+    },
+    {
+      "op_id": 162,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764260.8198736
+    },
+    {
+      "op_id": 162,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764260.8225956
+    },
+    {
+      "op_id": 162,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764260.8305604
+    },
+    {
+      "op_id": 162,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764272.407354
+    },
+    {
+      "op_id": 162,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764272.4114537
+    },
+    {
+      "op_id": 164,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764272.789328
+    },
+    {
+      "op_id": 164,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764272.7934568
+    },
+    {
+      "op_id": 166,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764272.9977648
+    },
+    {
+      "op_id": 167,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764273.9270718
+    },
+    {
+      "op_id": 168,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764274.4333262
+    },
+    {
+      "op_id": 168,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764274.4361138
+    },
+    {
+      "op_id": 168,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764274.4441316
+    },
+    {
+      "op_id": 168,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764286.017562
+    },
+    {
+      "op_id": 169,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764286.3950653
+    },
+    {
+      "op_id": 170,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764287.5369544
+    },
+    {
+      "op_id": 170,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764287.583279
+    },
+    {
+      "op_id": 163,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764287.6009705
+    },
+    {
+      "op_id": 171,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 10,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764287.8426383
+    },
+    {
+      "op_id": 171,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764288.7337441
+    },
+    {
+      "op_id": 171,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764288.7439659
+    },
+    {
+      "op_id": 171,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764288.763075
+    },
+    {
+      "op_id": 171,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764288.7679427
+    },
+    {
+      "op_id": 171,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764288.7871091
+    },
+    {
+      "op_id": 171,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764288.791957
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764288.9603188
+    },
+    {
+      "op_id": 172,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764288.9630344
+    },
+    {
+      "op_id": 172,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764288.9657438
+    },
+    {
+      "op_id": 172,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764288.9737964
+    },
+    {
+      "op_id": 172,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764300.569208
+    },
+    {
+      "op_id": 174,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764301.307789
+    },
+    {
+      "op_id": 174,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764301.311819
+    },
+    {
+      "op_id": 176,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764301.5152357
+    },
+    {
+      "op_id": 177,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764302.4442766
+    },
+    {
+      "op_id": 178,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764302.9509768
+    },
+    {
+      "op_id": 178,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764302.9537892
+    },
+    {
+      "op_id": 178,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764302.9617872
+    },
+    {
+      "op_id": 178,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764314.5542476
+    },
+    {
+      "op_id": 179,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764314.932703
+    },
+    {
+      "op_id": 180,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764316.0738158
+    },
+    {
+      "op_id": 180,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764316.1200805
+    },
+    {
+      "op_id": 173,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764316.1379857
+    },
+    {
+      "op_id": 181,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 11,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764316.377727
+    },
+    {
+      "op_id": 181,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764317.2676072
+    },
+    {
+      "op_id": 181,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764317.277841
+    },
+    {
+      "op_id": 181,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764317.2969544
+    },
+    {
+      "op_id": 181,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764317.301847
+    },
+    {
+      "op_id": 181,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764317.321013
+    },
+    {
+      "op_id": 181,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764317.3258572
+    },
+    {
+      "op_id": 182,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764317.5777333
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764317.66436
+    },
+    {
+      "op_id": 183,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764317.6672802
+    },
+    {
+      "op_id": 183,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764317.670006
+    },
+    {
+      "op_id": 183,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764317.6779945
+    },
+    {
+      "op_id": 183,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764329.2380397
+    },
+    {
+      "op_id": 185,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764329.6134086
+    },
+    {
+      "op_id": 185,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764329.6175106
+    },
+    {
+      "op_id": 187,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764329.8216767
+    },
+    {
+      "op_id": 188,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764330.7501523
+    },
+    {
+      "op_id": 189,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764331.2557197
+    },
+    {
+      "op_id": 189,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764331.258551
+    },
+    {
+      "op_id": 189,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764331.266555
+    },
+    {
+      "op_id": 189,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764342.831194
+    },
+    {
+      "op_id": 190,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764343.2080884
+    },
+    {
+      "op_id": 191,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764344.3490705
+    },
+    {
+      "op_id": 191,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764344.395361
+    },
+    {
+      "op_id": 184,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764344.413526
+    },
+    {
+      "op_id": 192,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 12,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764344.6565635
+    },
+    {
+      "op_id": 192,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764345.546907
+    },
+    {
+      "op_id": 192,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764345.5571458
+    },
+    {
+      "op_id": 192,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764345.5762994
+    },
+    {
+      "op_id": 192,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764345.5812013
+    },
+    {
+      "op_id": 192,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764345.6003904
+    },
+    {
+      "op_id": 192,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764345.60527
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764345.772932
+    },
+    {
+      "op_id": 193,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764345.7757056
+    },
+    {
+      "op_id": 193,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764345.7784421
+    },
+    {
+      "op_id": 193,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764345.7864835
+    },
+    {
+      "op_id": 193,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764357.3659708
+    },
+    {
+      "op_id": 195,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764358.1062958
+    },
+    {
+      "op_id": 195,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764358.1104348
+    },
+    {
+      "op_id": 197,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764358.314931
+    },
+    {
+      "op_id": 198,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764359.24446
+    },
+    {
+      "op_id": 199,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764359.7502797
+    },
+    {
+      "op_id": 199,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764359.7530773
+    },
+    {
+      "op_id": 199,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764359.7610838
+    },
+    {
+      "op_id": 199,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764371.3318472
+    },
+    {
+      "op_id": 200,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764371.7098
+    },
+    {
+      "op_id": 201,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764372.8499334
+    },
+    {
+      "op_id": 201,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764372.8960905
+    },
+    {
+      "op_id": 194,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764372.9147599
+    },
+    {
+      "op_id": 202,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 13,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764373.1550128
+    },
+    {
+      "op_id": 202,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764374.0452023
+    },
+    {
+      "op_id": 202,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764374.0554488
+    },
+    {
+      "op_id": 202,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764374.0745878
+    },
+    {
+      "op_id": 202,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764374.0794706
+    },
+    {
+      "op_id": 202,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764374.0986266
+    },
+    {
+      "op_id": 202,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764374.1034946
+    },
+    {
+      "op_id": 203,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764374.355757
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764374.442647
+    },
+    {
+      "op_id": 204,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764374.445419
+    },
+    {
+      "op_id": 204,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764374.4481516
+    },
+    {
+      "op_id": 204,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764374.4561467
+    },
+    {
+      "op_id": 204,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764386.0204449
+    },
+    {
+      "op_id": 206,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764386.3961663
+    },
+    {
+      "op_id": 206,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764386.400273
+    },
+    {
+      "op_id": 208,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764386.6036303
+    },
+    {
+      "op_id": 209,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764387.53092
+    },
+    {
+      "op_id": 210,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764388.0358891
+    },
+    {
+      "op_id": 210,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764388.0386586
+    },
+    {
+      "op_id": 210,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 8192
+      },
+      "timestamp": 1763764388.0466542
+    },
+    {
+      "op_id": 210,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764399.6255
+    },
+    {
+      "op_id": 211,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764400.002399
+    },
+    {
+      "op_id": 212,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764401.143868
+    },
+    {
+      "op_id": 212,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764401.1901424
+    },
+    {
+      "op_id": 205,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764401.2080984
+    },
+    {
+      "op_id": 213,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 14,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764401.452794
+    },
+    {
+      "op_id": 213,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764402.115062
+    },
+    {
+      "op_id": 213,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764402.1254015
+    },
+    {
+      "op_id": 213,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764402.1445587
+    },
+    {
+      "op_id": 213,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764402.1494577
+    },
+    {
+      "op_id": 213,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764402.1685793
+    },
+    {
+      "op_id": 213,
+      "primitive": "HRot",
+      "params": {
+        "amount": 4096,
+        "in_place": false
+      },
+      "timestamp": 1763764402.1734247
+    },
+    {
+      "op_id": 213,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764402.1925726
+    },
+    {
+      "op_id": 213,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764402.1974304
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764402.3653681
+    },
+    {
+      "op_id": 214,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764402.368054
+    },
+    {
+      "op_id": 214,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764402.3707628
+    },
+    {
+      "op_id": 214,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764402.3788223
+    },
+    {
+      "op_id": 214,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764413.9762497
+    },
+    {
+      "op_id": 216,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764414.7120519
+    },
+    {
+      "op_id": 216,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764414.716112
+    },
+    {
+      "op_id": 218,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764414.9201527
+    },
+    {
+      "op_id": 219,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764415.8501892
+    },
+    {
+      "op_id": 220,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764416.3568637
+    },
+    {
+      "op_id": 220,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764416.3596642
+    },
+    {
+      "op_id": 220,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764416.36766
+    },
+    {
+      "op_id": 220,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764427.7416968
+    },
+    {
+      "op_id": 221,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764428.1191428
+    },
+    {
+      "op_id": 222,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764429.2601943
+    },
+    {
+      "op_id": 222,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764429.3065312
+    },
+    {
+      "op_id": 215,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764429.3247204
+    },
+    {
+      "op_id": 223,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 16,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764429.565727
+    },
+    {
+      "op_id": 223,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764430.9256942
+    },
+    {
+      "op_id": 223,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764430.9359143
+    },
+    {
+      "op_id": 223,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764430.9550905
+    },
+    {
+      "op_id": 223,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764430.9599779
+    },
+    {
+      "op_id": 223,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764430.9790804
+    },
+    {
+      "op_id": 223,
+      "primitive": "HRot",
+      "params": {
+        "amount": 4096,
+        "in_place": false
+      },
+      "timestamp": 1763764430.9839218
+    },
+    {
+      "op_id": 223,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764431.002987
+    },
+    {
+      "op_id": 223,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764431.0078347
+    },
+    {
+      "op_id": 224,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 15,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764431.3776908
+    },
+    {
+      "op_id": 224,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764431.7089176
+    },
+    {
+      "op_id": 224,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764431.7191687
+    },
+    {
+      "op_id": 224,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764431.7383647
+    },
+    {
+      "op_id": 224,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764431.7432482
+    },
+    {
+      "op_id": 224,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764431.7623513
+    },
+    {
+      "op_id": 224,
+      "primitive": "HRot",
+      "params": {
+        "amount": 4096,
+        "in_place": false
+      },
+      "timestamp": 1763764431.7672038
+    },
+    {
+      "op_id": 224,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764431.7863047
+    },
+    {
+      "op_id": 224,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764431.7911422
+    },
+    {
+      "op_id": 225,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764432.0426466
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764432.1285613
+    },
+    {
+      "op_id": 226,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764432.1313932
+    },
+    {
+      "op_id": 226,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764432.1341183
+    },
+    {
+      "op_id": 226,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764432.1421118
+    },
+    {
+      "op_id": 226,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764443.5025165
+    },
+    {
+      "op_id": 228,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764443.880573
+    },
+    {
+      "op_id": 228,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764443.8846898
+    },
+    {
+      "op_id": 230,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764444.0878263
+    },
+    {
+      "op_id": 231,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764445.0158098
+    },
+    {
+      "op_id": 232,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764445.5211217
+    },
+    {
+      "op_id": 232,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764445.523933
+    },
+    {
+      "op_id": 232,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764445.531963
+    },
+    {
+      "op_id": 232,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764456.8731086
+    },
+    {
+      "op_id": 233,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764457.2503898
+    },
+    {
+      "op_id": 234,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764458.391324
+    },
+    {
+      "op_id": 234,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764458.4376342
+    },
+    {
+      "op_id": 227,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764458.4559689
+    },
+    {
+      "op_id": 235,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 17,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764458.6958125
+    },
+    {
+      "op_id": 235,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764460.06047
+    },
+    {
+      "op_id": 235,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764460.0707886
+    },
+    {
+      "op_id": 235,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764460.0898898
+    },
+    {
+      "op_id": 235,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764460.0947702
+    },
+    {
+      "op_id": 235,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764460.1138573
+    },
+    {
+      "op_id": 235,
+      "primitive": "HRot",
+      "params": {
+        "amount": 4096,
+        "in_place": false
+      },
+      "timestamp": 1763764460.1187208
+    },
+    {
+      "op_id": 235,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764460.1378052
+    },
+    {
+      "op_id": 235,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764460.1426423
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764460.3093665
+    },
+    {
+      "op_id": 236,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764460.312204
+    },
+    {
+      "op_id": 236,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764460.3149273
+    },
+    {
+      "op_id": 236,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764460.3229153
+    },
+    {
+      "op_id": 236,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764471.6617079
+    },
+    {
+      "op_id": 238,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764472.395136
+    },
+    {
+      "op_id": 238,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764472.3992653
+    },
+    {
+      "op_id": 240,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764472.6015837
+    },
+    {
+      "op_id": 241,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764473.5301352
+    },
+    {
+      "op_id": 242,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764474.041806
+    },
+    {
+      "op_id": 242,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764474.0446153
+    },
+    {
+      "op_id": 242,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764474.0526164
+    },
+    {
+      "op_id": 242,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764485.393657
+    },
+    {
+      "op_id": 243,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764485.7721803
+    },
+    {
+      "op_id": 244,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764486.9136183
+    },
+    {
+      "op_id": 244,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764486.9599779
+    },
+    {
+      "op_id": 237,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764486.9785657
+    },
+    {
+      "op_id": 245,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 18,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764487.218705
+    },
+    {
+      "op_id": 245,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764488.5835803
+    },
+    {
+      "op_id": 245,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764488.593897
+    },
+    {
+      "op_id": 245,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764488.6130095
+    },
+    {
+      "op_id": 245,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764488.617889
+    },
+    {
+      "op_id": 245,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764488.636955
+    },
+    {
+      "op_id": 245,
+      "primitive": "HRot",
+      "params": {
+        "amount": 4096,
+        "in_place": false
+      },
+      "timestamp": 1763764488.6417959
+    },
+    {
+      "op_id": 245,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764488.660894
+    },
+    {
+      "op_id": 245,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764488.6657324
+    },
+    {
+      "op_id": 246,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764488.917571
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764489.004093
+    },
+    {
+      "op_id": 247,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764489.0068994
+    },
+    {
+      "op_id": 247,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764489.009628
+    },
+    {
+      "op_id": 247,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764489.0176494
+    },
+    {
+      "op_id": 247,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764500.3523443
+    },
+    {
+      "op_id": 249,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764500.7261252
+    },
+    {
+      "op_id": 249,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764500.730261
+    },
+    {
+      "op_id": 251,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764500.9341638
+    },
+    {
+      "op_id": 252,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764501.8643522
+    },
+    {
+      "op_id": 253,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764502.3704102
+    },
+    {
+      "op_id": 253,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764502.3732436
+    },
+    {
+      "op_id": 253,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764502.3812413
+    },
+    {
+      "op_id": 253,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764513.7406743
+    },
+    {
+      "op_id": 254,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764514.1184807
+    },
+    {
+      "op_id": 255,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764515.259266
+    },
+    {
+      "op_id": 255,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764515.3055859
+    },
+    {
+      "op_id": 248,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764515.3244908
+    },
+    {
+      "op_id": 256,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 19,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764515.5666778
+    },
+    {
+      "op_id": 256,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764516.9262931
+    },
+    {
+      "op_id": 256,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764516.936521
+    },
+    {
+      "op_id": 256,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764516.9556787
+    },
+    {
+      "op_id": 256,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764516.960555
+    },
+    {
+      "op_id": 256,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764516.9796503
+    },
+    {
+      "op_id": 256,
+      "primitive": "HRot",
+      "params": {
+        "amount": 4096,
+        "in_place": false
+      },
+      "timestamp": 1763764516.98448
+    },
+    {
+      "op_id": 256,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764517.0035682
+    },
+    {
+      "op_id": 256,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764517.0084147
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764517.1753178
+    },
+    {
+      "op_id": 257,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764517.1781404
+    },
+    {
+      "op_id": 257,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764517.180858
+    },
+    {
+      "op_id": 257,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764517.1888356
+    },
+    {
+      "op_id": 257,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764528.550956
+    },
+    {
+      "op_id": 259,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764529.2866158
+    },
+    {
+      "op_id": 259,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764529.290749
+    },
+    {
+      "op_id": 261,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764529.4940464
+    },
+    {
+      "op_id": 262,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764530.423047
+    },
+    {
+      "op_id": 263,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764530.928774
+    },
+    {
+      "op_id": 263,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764530.9316072
+    },
+    {
+      "op_id": 263,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764530.9396226
+    },
+    {
+      "op_id": 263,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764542.3024905
+    },
+    {
+      "op_id": 264,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764542.6792166
+    },
+    {
+      "op_id": 265,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764543.819489
+    },
+    {
+      "op_id": 265,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764543.8657618
+    },
+    {
+      "op_id": 258,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764543.884377
+    },
+    {
+      "op_id": 266,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 20,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764544.1243477
+    },
+    {
+      "op_id": 266,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764545.4872127
+    },
+    {
+      "op_id": 266,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764545.4974504
+    },
+    {
+      "op_id": 266,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764545.516629
+    },
+    {
+      "op_id": 266,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764545.5215247
+    },
+    {
+      "op_id": 266,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764545.5406196
+    },
+    {
+      "op_id": 266,
+      "primitive": "HRot",
+      "params": {
+        "amount": 4096,
+        "in_place": false
+      },
+      "timestamp": 1763764545.5454566
+    },
+    {
+      "op_id": 266,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764545.5645297
+    },
+    {
+      "op_id": 266,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764545.5693862
+    },
+    {
+      "op_id": 267,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": false
+      },
+      "timestamp": 1763764545.8225484
+    },
+    {
+      "op_id": null,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar",
+        "in_place": true
+      },
+      "timestamp": 1763764545.9089198
+    },
+    {
+      "op_id": 268,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764545.9117472
+    },
+    {
+      "op_id": 268,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764545.9144852
+    },
+    {
+      "op_id": 268,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764545.92247
+    },
+    {
+      "op_id": 268,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "scalar_sub",
+        "in_place": true
+      },
+      "timestamp": 1763764557.2705367
+    },
+    {
+      "op_id": 270,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "float",
+        "in_place": false
+      },
+      "timestamp": 1763764557.644791
+    },
+    {
+      "op_id": 270,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_scalar"
+      },
+      "timestamp": 1763764557.6489792
+    },
+    {
+      "op_id": 272,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764557.8519568
+    },
+    {
+      "op_id": 273,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099511627776
+      },
+      "timestamp": 1763764558.7811117
+    },
+    {
+      "op_id": 274,
+      "primitive": "PMult",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764559.287373
+    },
+    {
+      "op_id": 274,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_plaintext"
+      },
+      "timestamp": 1763764559.2902203
+    },
+    {
+      "op_id": 274,
+      "primitive": "Bootstrap",
+      "params": {
+        "slots": 4096
+      },
+      "timestamp": 1763764559.2982218
+    },
+    {
+      "op_id": 274,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764570.6468956
+    },
+    {
+      "op_id": 275,
+      "primitive": "PolyEval",
+      "params": {
+        "out_scale": 1099507695617
+      },
+      "timestamp": 1763764571.0252376
+    },
+    {
+      "op_id": 276,
+      "primitive": "HMult",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764572.1665242
+    },
+    {
+      "op_id": 276,
+      "primitive": "Rescale",
+      "params": {
+        "origin": "mul_ciphertext"
+      },
+      "timestamp": 1763764572.2128587
+    },
+    {
+      "op_id": 269,
+      "primitive": "PMult",
+      "params": {
+        "kind": "scalar",
+        "scalar_type": "int",
+        "in_place": true
+      },
+      "timestamp": 1763764572.231104
+    },
+    {
+      "op_id": 277,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 21,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 2,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764572.4757564
+    },
+    {
+      "op_id": 277,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764573.01169
+    },
+    {
+      "op_id": 277,
+      "primitive": "HRot",
+      "params": {
+        "amount": 16384,
+        "in_place": false
+      },
+      "timestamp": 1763764573.0220249
+    },
+    {
+      "op_id": 277,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764573.0411875
+    },
+    {
+      "op_id": 277,
+      "primitive": "HRot",
+      "params": {
+        "amount": 8192,
+        "in_place": false
+      },
+      "timestamp": 1763764573.0460956
+    },
+    {
+      "op_id": 277,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764573.0651946
+    },
+    {
+      "op_id": 277,
+      "primitive": "HRot",
+      "params": {
+        "amount": 4096,
+        "in_place": false
+      },
+      "timestamp": 1763764573.0700574
+    },
+    {
+      "op_id": 277,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764573.0891678
+    },
+    {
+      "op_id": 277,
+      "primitive": "HRot",
+      "params": {
+        "amount": 2048,
+        "in_place": false
+      },
+      "timestamp": 1763764573.0940163
+    },
+    {
+      "op_id": 277,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764573.113083
+    },
+    {
+      "op_id": 277,
+      "primitive": "HRot",
+      "params": {
+        "amount": 1024,
+        "in_place": false
+      },
+      "timestamp": 1763764573.117932
+    },
+    {
+      "op_id": 277,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "ciphertext",
+        "in_place": true
+      },
+      "timestamp": 1763764573.1370623
+    },
+    {
+      "op_id": 277,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764573.141895
+    },
+    {
+      "op_id": 278,
+      "primitive": "MatVec",
+      "params": {
+        "transform_id": 22,
+        "row": 0,
+        "col": 0,
+        "bsgs_ratio": 2.0,
+        "level": 1,
+        "embedding": "hybrid"
+      },
+      "timestamp": 1763764573.3149185
+    },
+    {
+      "op_id": 278,
+      "primitive": "Rescale",
+      "params": {
+        "in_place": false
+      },
+      "timestamp": 1763764573.546767
+    },
+    {
+      "op_id": 278,
+      "primitive": "HAdd",
+      "params": {
+        "kind": "plaintext",
+        "in_place": true
+      },
+      "timestamp": 1763764573.5552862
+    }
+  ]
+}

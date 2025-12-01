@@ -31,16 +31,18 @@
         "in_features": 784,
         "out_features": 128
       },
-      "duration_sec": 0.17592740058898926,
-      "peak_mem_bytes": 2249953280
+      "duration_sec": 0.17289185523986816,
+      "peak_mem_bytes": 20971520,
+      "peak_mem_samples": 162
     },
     {
       "op_id": 1,
       "op_type": "Quad",
       "name": "act1",
       "params": {},
-      "duration_sec": 0.014579057693481445,
-      "peak_mem_bytes": 2249953280
+      "duration_sec": 0.01381373405456543,
+      "peak_mem_bytes": 0,
+      "peak_mem_samples": 13
     },
     {
       "op_id": 2,
@@ -69,16 +71,18 @@
         "in_features": 128,
         "out_features": 128
       },
-      "duration_sec": 0.12357783317565918,
-      "peak_mem_bytes": 2249953280
+      "duration_sec": 0.12028741836547852,
+      "peak_mem_bytes": 10485760,
+      "peak_mem_samples": 113
     },
     {
       "op_id": 3,
       "op_type": "Quad",
       "name": "act2",
       "params": {},
-      "duration_sec": 0.011747598648071289,
-      "peak_mem_bytes": 2249953280
+      "duration_sec": 0.011327266693115234,
+      "peak_mem_bytes": 1048576,
+      "peak_mem_samples": 11
     },
     {
       "op_id": 4,
@@ -107,8 +111,9 @@
         "in_features": 128,
         "out_features": 10
       },
-      "duration_sec": 0.0431368350982666,
-      "peak_mem_bytes": 2249953280
+      "duration_sec": 0.04269123077392578,
+      "peak_mem_bytes": 5242880,
+      "peak_mem_samples": 40
     }
   ],
   "primitives": [
@@ -123,7 +128,7 @@
         "level": 5,
         "embedding": "hybrid"
       },
-      "timestamp": 1763753825.3748362
+      "timestamp": 1763761587.566543
     },
     {
       "op_id": 0,
@@ -131,7 +136,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763753825.476012
+      "timestamp": 1763761587.6672988
     },
     {
       "op_id": 0,
@@ -140,7 +145,7 @@
         "amount": 4096,
         "in_place": false
       },
-      "timestamp": 1763753825.4820566
+      "timestamp": 1763761587.673005
     },
     {
       "op_id": 0,
@@ -149,7 +154,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.4889195
+      "timestamp": 1763761587.6798277
     },
     {
       "op_id": 0,
@@ -158,7 +163,7 @@
         "amount": 2048,
         "in_place": false
       },
-      "timestamp": 1763753825.4931479
+      "timestamp": 1763761587.68376
     },
     {
       "op_id": 0,
@@ -167,7 +172,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.50012
+      "timestamp": 1763761587.690565
     },
     {
       "op_id": 0,
@@ -176,7 +181,7 @@
         "amount": 1024,
         "in_place": false
       },
-      "timestamp": 1763753825.5043252
+      "timestamp": 1763761587.6944995
     },
     {
       "op_id": 0,
@@ -185,7 +190,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.5112684
+      "timestamp": 1763761587.7012424
     },
     {
       "op_id": 0,
@@ -194,7 +199,7 @@
         "amount": 512,
         "in_place": false
       },
-      "timestamp": 1763753825.515451
+      "timestamp": 1763761587.705147
     },
     {
       "op_id": 0,
@@ -203,7 +208,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.5223005
+      "timestamp": 1763761587.7119882
     },
     {
       "op_id": 0,
@@ -212,7 +217,7 @@
         "amount": 256,
         "in_place": false
       },
-      "timestamp": 1763753825.5264812
+      "timestamp": 1763761587.7159307
     },
     {
       "op_id": 0,
@@ -221,7 +226,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.5334027
+      "timestamp": 1763761587.72279
     },
     {
       "op_id": 0,
@@ -230,7 +235,7 @@
         "amount": 128,
         "in_place": false
       },
-      "timestamp": 1763753825.5376143
+      "timestamp": 1763761587.7267098
     },
     {
       "op_id": 0,
@@ -239,7 +244,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.544458
+      "timestamp": 1763761587.7335236
     },
     {
       "op_id": 0,
@@ -248,7 +253,7 @@
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763753825.5486512
+      "timestamp": 1763761587.737454
     },
     {
       "op_id": 1,
@@ -256,7 +261,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763753825.5510461
+      "timestamp": 1763761587.7404544
     },
     {
       "op_id": 1,
@@ -264,7 +269,7 @@
       "params": {
         "origin": "mul_ciphertext"
       },
-      "timestamp": 1763753825.558432
+      "timestamp": 1763761587.7474303
     },
     {
       "op_id": 2,
@@ -277,7 +282,7 @@
         "level": 3,
         "embedding": "hybrid"
       },
-      "timestamp": 1763753825.5677733
+      "timestamp": 1763761587.7569754
     },
     {
       "op_id": 2,
@@ -285,7 +290,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763753825.6294265
+      "timestamp": 1763761587.8183727
     },
     {
       "op_id": 2,
@@ -294,7 +299,7 @@
         "amount": 4096,
         "in_place": false
       },
-      "timestamp": 1763753825.6348662
+      "timestamp": 1763761587.8235688
     },
     {
       "op_id": 2,
@@ -303,7 +308,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.6397996
+      "timestamp": 1763761587.8282816
     },
     {
       "op_id": 2,
@@ -312,7 +317,7 @@
         "amount": 2048,
         "in_place": false
       },
-      "timestamp": 1763753825.6439729
+      "timestamp": 1763761587.8321874
     },
     {
       "op_id": 2,
@@ -321,7 +326,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.6487937
+      "timestamp": 1763761587.8369195
     },
     {
       "op_id": 2,
@@ -330,7 +335,7 @@
         "amount": 1024,
         "in_place": false
       },
-      "timestamp": 1763753825.6529486
+      "timestamp": 1763761587.8408213
     },
     {
       "op_id": 2,
@@ -339,7 +344,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.6577926
+      "timestamp": 1763761587.8455217
     },
     {
       "op_id": 2,
@@ -348,7 +353,7 @@
         "amount": 512,
         "in_place": false
       },
-      "timestamp": 1763753825.6619813
+      "timestamp": 1763761587.8494108
     },
     {
       "op_id": 2,
@@ -357,7 +362,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.666889
+      "timestamp": 1763761587.8541214
     },
     {
       "op_id": 2,
@@ -366,7 +371,7 @@
         "amount": 256,
         "in_place": false
       },
-      "timestamp": 1763753825.6710625
+      "timestamp": 1763761587.8580325
     },
     {
       "op_id": 2,
@@ -375,7 +380,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.6760175
+      "timestamp": 1763761587.8627448
     },
     {
       "op_id": 2,
@@ -384,7 +389,7 @@
         "amount": 128,
         "in_place": false
       },
-      "timestamp": 1763753825.680186
+      "timestamp": 1763761587.8666582
     },
     {
       "op_id": 2,
@@ -393,7 +398,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763753825.685007
+      "timestamp": 1763761587.8713946
     },
     {
       "op_id": 2,
@@ -402,7 +407,7 @@
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763753825.6891649
+      "timestamp": 1763761587.8752873
     },
     {
       "op_id": 3,
@@ -410,7 +415,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763753825.6914303
+      "timestamp": 1763761587.8783576
     },
     {
       "op_id": 3,
@@ -418,7 +423,7 @@
       "params": {
         "origin": "mul_ciphertext"
       },
-      "timestamp": 1763753825.6964014
+      "timestamp": 1763761587.8832421
     },
     {
       "op_id": 4,
@@ -431,7 +436,7 @@
         "level": 1,
         "embedding": "hybrid"
       },
-      "timestamp": 1763753825.7073653
+      "timestamp": 1763761587.8946633
     },
     {
       "op_id": 4,
@@ -439,7 +444,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763753825.743502
+      "timestamp": 1763761587.9307933
     },
     {
       "op_id": 4,
@@ -448,7 +453,7 @@
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763753825.7484026
+      "timestamp": 1763761587.9353843
     }
   ]
 }

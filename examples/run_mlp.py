@@ -1,6 +1,14 @@
 import time
 import math
+import os
+import sys
 import torch
+
+# Ensure local orion package is used (avoids picking up a different installed copy).
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
+
 import orion
 import orion.models as models
 from orion.core.utils import (
@@ -11,14 +19,16 @@ from orion.core.utils import (
 
 # Set seed for reproducibility
 torch.manual_seed(42)
-TRACE_PATH = "../data/mlp_primitive_trace.json"
+CONFIG_PATH = os.path.join(REPO_ROOT, "configs", "mlp.yml")
+DATA_DIR = os.path.join(REPO_ROOT, "data")
+TRACE_PATH = os.path.join(DATA_DIR, "mlp_primitive_trace.json")
 
 # Initialize the Orion scheme, model, and data
-scheme = orion.init_scheme("../configs/mlp.yml")
+scheme = orion.init_scheme(CONFIG_PATH)
 scheme.trace_logger.enable()
 scheme.trace_logger.output_path = TRACE_PATH
 
-trainloader, testloader = get_mnist_datasets(data_dir="../data", batch_size=1)
+trainloader, testloader = get_mnist_datasets(data_dir=DATA_DIR, batch_size=1)
 net = models.MLP()
 
 # Train model (optional)

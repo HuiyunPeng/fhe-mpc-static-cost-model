@@ -12,8 +12,12 @@ from orion.core.utils import (
 # Set seed for reproducibility
 torch.manual_seed(42)
 
+TRACE_PATH = "../data/resnet_primitive_trace.json"
+
 # Initialize the Orion scheme, model, and data
 scheme = orion.init_scheme("../configs/resnet.yml")
+scheme.trace_logger.enable()
+scheme.trace_logger.output_path = TRACE_PATH
 trainloader, testloader = get_cifar_datasets(data_dir="../data", batch_size=1)
 net = models.ResNet20()
 
@@ -59,3 +63,8 @@ dist = mae(out_clear, out_fhe)
 print(f"\nMAE: {dist:.4f}")
 print(f"Precision: {-math.log2(dist):.4f}")
 print(f"Runtime: {end-start:.4f} secs.\n")
+
+
+trace_file = scheme.save_trace()
+if trace_file:
+    print(f"Primitive trace saved to {trace_file}\n")

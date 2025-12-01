@@ -208,3 +208,6 @@ go.work.sum
 
 # Datasets
 data/MNIST
+data/cifar*
+data/*.csv
+data/*.pdf
