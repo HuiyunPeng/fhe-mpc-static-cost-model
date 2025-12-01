@@ -1,0 +1,6 @@
+op_id,name,op_type,level,peak_mem_bytes
+0,fc1,Linear,5,1367656
+1,act1,Quad,4,1144016
+2,fc2,Linear,3,920372
+3,act2,Quad,2,696732
+4,fc3,Linear,1,473088

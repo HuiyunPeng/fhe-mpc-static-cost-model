@@ -8,7 +8,13 @@ class NewEvaluator:
         self.scheme = scheme 
         self.backend = scheme.backend
         self.new_polynomial_evaluator()
-    
+
+    def _ciphertext_level(self, ctxt):
+        try:
+            return int(self.backend.GetCiphertextLevel(ctxt))
+        except Exception:
+            return None
+
     def _log_primitive(self, primitive, **params):
         tracer = getattr(self.scheme, "trace_logger", None)
         if tracer:
@@ -33,6 +39,8 @@ class NewEvaluator:
         log_params = {"out_scale": out_scale}
         if poly_depth is not None:
             log_params["poly_depth"] = poly_depth
+        if len(ciphertensor.ids):
+            log_params["level"] = self._ciphertext_level(ciphertensor.ids[0])
         self._log_primitive("PolyEval", **log_params)
 
         cts_out = []  

@@ -151,10 +151,12 @@ def main() -> None:
         fig.write_image(str(pdf_path), format="pdf")
         print(f"Wrote PDF to {pdf_path}")
     except Exception as exc:
-        raise SystemExit(
-            "Creating a PDF requires the Plotly static image engine "
-            "(install with `pip install -U plotly[kaleido]`)."
-        ) from exc
+        print(f"Error writing PDF: {exc}")
+        # Fallback to HTML
+        html_path = pdf_path.with_suffix('.html')
+        fig.write_html(str(html_path))
+        print(f"Could not create PDF, saved interactive HTML to {html_path}")
+        print("To create PDFs, install with: pip install -U plotly[kaleido]")
 
 
 if __name__ == "__main__":

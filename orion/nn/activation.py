@@ -36,6 +36,14 @@ class Activation(Module):
                 "degree": len(self.coeffs) - 1,
                 "output_scale": self.output_scale,
             }
+            level = getattr(x, "level", None)
+            if callable(level):
+                try:
+                    level = level()
+                except Exception:
+                    level = None
+            if level is not None:
+                params["level"] = level
             with self._trace_context(params=params):
                 return self.scheme.poly_evaluator.evaluate_polynomial( 
                     x, self.poly, self.output_scale)
@@ -56,7 +64,14 @@ class Quad(Module):
     @timer
     def forward(self, x):
         # Record quad operations when tracing is enabled (FHE mode only).
-        ctx = self._trace_context() if self.he_mode else nullcontext()
+        params = {}
+        lvl_getter = getattr(x, "level", None)
+        if callable(lvl_getter):
+            try:
+                params["level"] = lvl_getter()
+            except Exception:
+                pass
+        ctx = self._trace_context(params=params) if self.he_mode else nullcontext()
         with ctx:
             out = x * x 
             if self.he_mode:
@@ -131,6 +146,12 @@ class Chebyshev(Module):
             "constant": self.constant,
             "output_scale": self.output_scale,
         }
+        lvl_getter = getattr(x, "level", None)
+        if callable(lvl_getter):
+            try:
+                params["level"] = lvl_getter()
+            except Exception:
+                pass
         with self._trace_context(params=params):
             return self.scheme.poly_evaluator.evaluate_polynomial(
                 x, self.poly, self.output_scale)
