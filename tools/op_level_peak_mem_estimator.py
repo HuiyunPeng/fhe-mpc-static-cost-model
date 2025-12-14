@@ -1,331 +1,196 @@
-#!/usr/bin/env python3
 import argparse
-import json
-import math
 import csv
-from collections import defaultdict
-from typing import Dict, List, Tuple, Union
+import math
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Dict, List
 
+import torch
 import yaml
 
+import orion
+import orion.models as models
+import orion.nn as on
+from orion.core.tracer import OrionTracer, StatsTracker
 
+@dataclass
 class CkksParams:
-    """
-    Minimal CKKS parameter helper to estimate plaintext/ciphertext footprint.
+    logn: int
+    logq: list  # full chain
+    overhead: float = 1.05  # metadata cushion
 
-    Assumptions:
-      - ciphertext stores two polynomials
-      - each polynomial uses all moduli up to `level` (inclusive)
-      - plaintext uses a single polynomial with the active modulus set, modeled
-        as using the sum of active LogQ up to `level`
-      - a small overhead factor accounts for metadata/allocator slack
-    """
-
-    def __init__(
-        self,
-        logn: int,
-        logq: List[int],
-        logp: List[int] = None,
-        overhead: float = 1.05,
-    ):
-        self.logn = logn
-        self.logq = logq
-        self.logp = logp or []
-        self.ring_degree = 1 << logn
-        self.overhead = overhead
-
-    @classmethod
-    def from_config(cls, cfg: Union[str, Dict]) -> "CkksParams":
-        """
-        Accepts a YAML path or a config dictionary with CKKS parameters under
-        the `ckks_params` key (mirrors Orion's config structure).
-        """
-        if isinstance(cfg, str):
-            with open(cfg, "r", encoding="utf-8") as f:
-                cfg = yaml.safe_load(f)
-
-        ckks_cfg = cfg.get("ckks_params", cfg)
-        return cls(
-            logn=ckks_cfg["LogN"],
-            logq=ckks_cfg["LogQ"],
-            logp=ckks_cfg.get("LogP", []),
-        )
-
-    def _clamp_level(self, level: int) -> int:
-        if level is None:
-            return len(self.logq) - 1
-        return max(0, min(level, len(self.logq) - 1))
+    @property
+    def n(self): return 2 ** self.logn
 
     def ct_bytes(self, level: int) -> int:
-        """
-        Estimate ciphertext bytes at a given level.
-        2 polys * N coefficients * sum(logQi) bits, times overhead.
-        """
-        lvl = self._clamp_level(level)
-        bitwidth = 2 * self.ring_degree * sum(self.logq[: lvl + 1])
-        return math.ceil(bitwidth / 8 * self.overhead)
+        logq_active = sum(self.logq[: level + 1])
+        return int(2 * self.n * logq_active / 8 * self.overhead)  # 2 polys
 
     def pt_bytes(self, level: int) -> int:
-        """
-        Estimate plaintext bytes at a given level.
-        1 poly * N coefficients * sum(logQi) bits, times overhead.
-        """
-        lvl = self._clamp_level(level)
-        bitwidth = self.ring_degree * sum(self.logq[: lvl + 1])
-        return math.ceil(bitwidth / 8 * self.overhead)
+        logq_active = sum(self.logq[: level + 1])
+        return int(self.n * logq_active / 8 * self.overhead)
 
+def linear_mem(op, params: CkksParams):
+    ct = params.ct_bytes(op["level"])
+    # input + accumulator + rotations + output
+    return ct * (2 + op.get("output_rotations", 0) + 1)
 
-# -------------------------- Trace loading -------------------------- #
+def poly_mem(op, params: CkksParams):
+    ct = params.ct_bytes(op["level"])
+    poly_depth = op.get("degree", op.get("depth", 1))
+    return ct * (1 + poly_depth + 1)  # in + temps + out
 
-
-def load_trace(path: str) -> Tuple[List[Dict], List[Dict]]:
-    """
-    Load a combined ops + primitives trace produced by the Orion backend
-    primitive logger.
-    """
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return data.get("ops", []), data.get("primitives", [])
-
-
-def load_ops(path: str) -> List[Dict]:
-    """
-    Load ops from a JSON file. Expected format:
-      { "ops": [ ... ] }
-    or directly a list of ops.
-    """
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return data.get("ops", data)
-
-
-def group_primitives_by_op(primitives: List[Dict]) -> Dict[int, List[Dict]]:
-    """
-    Group primitive records by op_id, ignoring primitives with op_id = null.
-    """
-    grouped = defaultdict(list)
-    for prim in primitives:
-        op_id = prim.get("op_id")
-        if op_id is None:
-            continue
-        grouped[op_id].append(prim)
-    return grouped
-
-
-# ---------------------- Primitive-level model ---------------------- #
-
-
-def prim_peak_buffers(primitive: Dict) -> Tuple[int, int]:
-    """
-    Return an approximate (num_ciphertexts, num_plaintexts) live at the
-    peak of this primitive's execution.
-
-    These are conservative templates and can be refined over time.
-    """
-    prim_type = primitive.get("primitive")
-    params = primitive.get("params", {}) or {}
-
-    # base mapping
-    mapping = {
-        "HAdd": (3, 0),       # in1, in2, out
-        "HMult": (4, 0),      # in1, in2, temp, out
-        "PMult": (2, 1),      # ct + pt
-        "HRot": (3, 0),       # in, rotated, maybe accumulator
-        "Rescale": (2, 0),    # in + out
-        "MatVec": (4, 0),     # BSGS block (very rough)
-        "Bootstrap": (8, 4),  # large workspace
-    }
-
-    ct_cnt, pt_cnt = mapping.get(prim_type, (2, 0))
-
-    # Simple handling of in-place ops: they need fewer temporaries.
-    # If the primitive is explicitly marked in_place=true, reduce by 1 ct.
-    if params.get("in_place") and ct_cnt > 1:
-        ct_cnt -= 1
-
-    return ct_cnt, pt_cnt
-
-
-def primitive_peak_memory(
-    primitive: Dict, params: CkksParams, fallback_level: int = None
-) -> int:
-    """
-    Estimate the peak memory for a single primitive, in bytes, based on the
-    number of ciphertexts and plaintexts it holds live and the CKKS params.
-    """
-    level = fallback_level
-    prim_params = primitive.get("params")
-    if isinstance(prim_params, dict):
-        level = prim_params.get("level", prim_params.get("output_level", level))
-        if level is None:
-            level = prim_params.get("input_level", fallback_level)
-
-    ct_cnt, pt_cnt = prim_peak_buffers(primitive)
-    ct_bytes = params.ct_bytes(level)
-    pt_bytes = params.pt_bytes(level)
-    return ct_cnt * ct_bytes + pt_cnt * pt_bytes
-
-
-def estimate_peak_from_primitives(
-    ops: List[Dict],
-    prims_by_op: Dict[int, List[Dict]],
-    ckks_cfg: Union[str, Dict],
-) -> List[Dict]:
-    """
-    Primitive-aware per-op peak memory estimation.
-    For each op, we aggregate all its primitives and take the maximum
-    primitive peak as the op's peak memory.
-    """
-    ckks = CkksParams.from_config(ckks_cfg)
-    results = []
-
-    for op in ops:
-        op_id = op.get("op_id")
-        params = op.get("params", {}) if isinstance(op.get("params"), dict) else {}
-        level = params.get("level")
-        prims = prims_by_op.get(op_id, [])
-
-        peak = 0
-        for p in prims:
-            prim_peak = primitive_peak_memory(p, ckks, fallback_level=level)
-            if prim_peak > peak:
-                peak = prim_peak
-
-        if peak == 0:
-            ct_cnt, pt_cnt = op_peak_buffers(op.get("op_type"))
-            peak = ct_cnt * ckks.ct_bytes(level) + pt_cnt * ckks.pt_bytes(level)
-
-        results.append(
-            {
-                "op_id": op_id,
-                "name": op.get("name"),
-                "op_type": op.get("op_type"),
-                "level": level,
-                "peak_mem_bytes": peak,
-            }
-        )
-    return results
-
-
-# --------------------- Fallback operator-level model --------------------- #
-
-_OP_HEURISTIC_BUFFERS = {
-    "Conv2d": (4, 0),
-    "Linear": (3, 0),
-    "Add": (3, 0),
-    "ReLU": (2, 0),
-    "SiLU": (2, 0),
-    "AvgPool2d": (3, 0),
+ESTIMATORS = {
+    "Linear": linear_mem,
+    "Conv2d": linear_mem,
+    "Activation": poly_mem,
+    "Quad": lambda op, p: poly_mem({**op, "degree": 2}, p),
+    "BatchNorm1d": lambda op, p: p.ct_bytes(op["level"]) * 2 + p.pt_bytes(op["level"]),
+    "BatchNorm2d": lambda op, p: p.ct_bytes(op["level"]) * 2 + p.pt_bytes(op["level"]),
 }
 
-
-def op_peak_buffers(op_type: str) -> Tuple[int, int]:
-    return _OP_HEURISTIC_BUFFERS.get(op_type, (2, 0))
-
-
-def estimate_peak_from_ops(
-    ops: List[Dict],
-    ckks_cfg: Union[str, Dict],
-) -> List[Dict]:
-    """
-    Legacy operator-level-only peak memory estimator.
-    Uses coarse heuristics per op_type and CKKS params.
-    """
-    ckks = CkksParams.from_config(ckks_cfg)
+def estimate_ops(ops, ckks_cfg):
+    params = CkksParams(logn=ckks_cfg["LogN"], logq=ckks_cfg["LogQ"])
     results = []
     for op in ops:
-        params = op.get("params", {}) if isinstance(op.get("params"), dict) else {}
-        level = params.get("level")
-        ct_cnt, pt_cnt = op_peak_buffers(op.get("op_type"))
-        peak = ct_cnt * ckks.ct_bytes(level) + pt_cnt * ckks.pt_bytes(level)
-        results.append(
-            {
-                "op_id": op.get("op_id"),
-                "name": op.get("name"),
-                "op_type": op.get("op_type"),
-                "level": level,
-                "peak_mem_bytes": peak,
-            }
-        )
+        fn = ESTIMATORS.get(op["op_type"])
+        if not fn:
+            continue
+        level = op.get("params", {}).get("level")
+        if level is None:
+            # Skip ops without assigned level (non-FHE ops like Flatten)
+            continue
+        results.append({
+            "op_id": op["op_id"],
+            "op_type": op["op_type"],
+            "name": op.get("name"),
+            "level": level,
+            "peak_mem_bytes": fn({**op, **op.get("params", {})}, params),
+        })
     return results
 
 
-# -------------------------- CLI + pretty printing -------------------------- #
+def _collect_ops_from_model(net) -> List[Dict[str, Any]]:
+    """
+    Collect per-op metadata (shapes, level, depth) from leaf Orion modules.
+    Assumes scheme.fit/compile has already populated module attributes.
+    """
+    ops = []
+    for name, module in net.named_modules():
+        if not isinstance(module, on.Module):
+            continue
+        if len(list(module.children())) > 0:
+            continue  # only leaves (actual ops)
+
+        params = {
+            "input_shape": tuple(getattr(module, "input_shape", []) or []),
+            "output_shape": tuple(getattr(module, "output_shape", []) or []),
+            "fhe_input_shape": tuple(getattr(module, "fhe_input_shape", []) or []),
+            "fhe_output_shape": tuple(getattr(module, "fhe_output_shape", []) or []),
+            "level": getattr(module, "level", None),
+            "depth": getattr(module, "depth", None),
+            "output_rotations": getattr(module, "output_rotations", 0),
+        }
+
+        ops.append(
+            {
+                "op_id": len(ops),
+                "op_type": module.__class__.__name__,
+                "name": name,
+                "params": params,
+            }
+        )
+    return ops
 
 
-def fmt_bytes(num: int) -> str:
-    if num is None:
-        return "n/a"
-    n = float(num)
-    for unit in ["B", "KB", "MB", "GB", "TB"]:
-        if n < 1024 or unit == "TB":
-            return f"{n:,.2f} {unit}"
-        n /= 1024.0
-    return f"{n:,.2f} TB"
+def _parse_shape(shape_str: str):
+    try:
+        return tuple(int(x) for x in shape_str.split(","))
+    except Exception as exc:
+        raise argparse.ArgumentTypeError(
+            f"Invalid shape '{shape_str}'. Use comma-separated ints, e.g., 1,1,28,28."
+        ) from exc
+
+
+def _load_ckks_cfg(path: str):
+    with open(path, "r", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f)
+    ckks = cfg.get("ckks_params", {})
+    if not {"LogN", "LogQ"} <= set(ckks):
+        raise ValueError("Config must include ckks_params.LogN and ckks_params.LogQ")
+    return ckks
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Estimate CKKS peak memory usage from Orion traces."
+        description="Estimate per-op peak memory from CKKS params and synthetic shapes."
     )
+    parser.add_argument("--config", required=True, help="Path to Orion YAML config")
+    parser.add_argument("--model", required=True, help="Model class name in orion.models (e.g., MLP)")
     parser.add_argument(
-        "--config",
-        "-c",
+        "--input-shape",
         required=True,
-        help="Path to Orion config (YAML) with ckks_params.",
-    )
-    parser.add_argument(
-        "--trace",
-        help="Path to primitive trace JSON (ops + primitives). "
-        "If provided, uses primitive-based estimator.",
-    )
-    parser.add_argument(
-        "--ops",
-        help="Path to ops JSON (if no --trace). Should contain 'ops' list or be a list.",
+        type=_parse_shape,
+        help="Comma-separated input shape, e.g., 1,1,28,28",
     )
     parser.add_argument(
         "--csv-out",
-        help="Optional path to write per-op results as CSV. "
-        "If omitted, results are printed to stdout.",
+        type=Path,
+        help="Optional path to save per-op peak memory CSV (defaults beside config)",
     )
     args = parser.parse_args()
 
-    # Decide which estimator to use
-    if args.trace:
-        ops, prims = load_trace(args.trace)
-        prims_by_op = group_primitives_by_op(prims)
-        results = estimate_peak_from_primitives(ops, prims_by_op, args.config)
-        mode = "primitive-aware"
-    else:
-        if not args.ops:
-            raise SystemExit("Provide --trace or --ops for estimation.")
-        ops = load_ops(args.ops)
-        results = estimate_peak_from_ops(ops, args.config)
-        mode = "operator-only (heuristic)"
+    ckks_cfg = _load_ckks_cfg(args.config)
 
-    # CSV output if requested
-    if args.csv_out:
-        fieldnames = ["op_id", "name", "op_type", "level", "peak_mem_bytes"]
-        with open(args.csv_out, "w", encoding="utf-8", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            for row in results:
-                writer.writerow({k: row.get(k) for k in fieldnames})
-        print(f"Wrote {mode} peak-memory estimates to CSV: {args.csv_out}")
-        return
+    scheme = orion.init_scheme(args.config)
+    try:
+        model_cls = getattr(models, args.model)
+    except AttributeError:
+        raise SystemExit(f"Unknown model '{args.model}' in orion.models")
 
-    # Otherwise pretty-print to stdout
-    print(f"Estimation mode: {mode}")
-    print(f"{'op_id':>5}  {'name':20}  {'op_type':12}  {'level':>5}  {'peak':>16}")
-    print("-" * 68)
-    for row in results:
+    net = model_cls()
+    net.eval()
+
+    dummy = torch.zeros(args.input_shape)
+
+    # Populate shapes/statistics without real data (plain torch forward)
+    scheme.fit(net, dummy)
+    scheme.compile(net)
+
+    ops = _collect_ops_from_model(net)
+    results = estimate_ops(ops, ckks_cfg)
+
+    print("\nPer-op peak memory estimate (bytes):")
+    for entry in results:
+        level = entry.get("level")
+        mem = entry["peak_mem_bytes"]
         print(
-            f"{str(row['op_id']):>5}  "
-            f"{str(row['name'] or ''):20.20}  "
-            f"{str(row['op_type'] or ''):12.12}  "
-            f"{str(row['level']):>5}  "
-            f"{fmt_bytes(row['peak_mem_bytes']):>16}"
+            f"- {entry['op_id']:02d} {entry['name']} ({entry['op_type']}), "
+            f"level={level}: {mem:,d}"
         )
+
+    # Optionally persist results to CSV for downstream analysis/reporting.
+    csv_path = args.csv_out
+    if csv_path is None:
+        cfg_path = Path(args.config)
+        csv_path = cfg_path.with_name(f"{cfg_path.stem}_{args.model}_peak_mem.csv")
+
+    Fieldnames = ["op_id", "name", "op_type", "level", "peak_mem_bytes", "peak_mem_mib"]
+    with csv_path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=Fieldnames)
+        writer.writeheader()
+        for row in results:
+            writer.writerow(
+                {
+                    "op_id": row["op_id"],
+                    "name": row.get("name"),
+                    "op_type": row.get("op_type"),
+                    "level": row.get("level"),
+                    "peak_mem_bytes": row["peak_mem_bytes"],
+                    "peak_mem_mib": row["peak_mem_bytes"] / (1024 * 1024),
+                }
+            )
+    print(f"\nSaved CSV to {csv_path}")
 
 
 if __name__ == "__main__":

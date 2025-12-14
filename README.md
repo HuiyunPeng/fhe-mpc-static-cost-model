@@ -18,8 +18,11 @@ designs without running costly encrypted inference every time.
   buffer counts, and timing.
 - **Static cost model tools** – Scripts in `tools/` consume those traces
   and CKKS configs to estimate per-operator peak memory, export CSV
-  reports, and generate comparison plots (`peak_mem_estimator.py`,
-  `trace_report.py`, `plot_peak_mem_bar.py`).
+  reports, and generate comparison plots. Two levels of estimation are
+  available: `primitive_level_peak_mem_estimator.py` for detailed
+  primitive-granularity analysis, and `op_level_peak_mem_estimator.py`
+  for coarser operator-level estimates. Supporting utilities include
+  `trace_report.py` and `plot_peak_mem_bar.py`.
 - **Sample data & configs** – `configs/*.yml` reproduce LoLA, MLP, and
   ResNet runs; `data/` stores cached diagonals, keys, and example trace
   outputs to experiment with the estimator.
@@ -88,17 +91,29 @@ pip install -e .
 
 2. **Estimate peak memory statically**
 
-   Feed the trace plus the CKKS configuration into the estimator:
+   Two levels of peak memory estimation are available:
 
+   **Primitive-level estimation** (detailed, trace-based):
    ```bash
-   python tools/peak_mem_estimator.py \
+   python tools/primitive_level_peak_mem_estimator.py \
        --config configs/lola.yml \
        --trace data/lola_primitive_trace.json \
        --csv-out data/lola_peak_estimated.csv
    ```
+   This approach analyzes individual primitive operations from the trace
+   for fine-grained memory accounting.
 
-   When only operator metadata is available (no primitive trace), switch
-   to the heuristic mode by passing `--ops path/to/ops.json` instead.
+   **Operator-level estimation** (static, synthetic shapes):
+   ```bash
+   python tools/op_level_peak_mem_estimator.py \
+       --config configs/mlp.yml \
+       --model MLP \
+       --input-shape 1,784 \
+       --csv-out data/mlp_op_peak_mem.csv
+   ```
+   This approach estimates per-operator memory directly from Orion model 
+   metadata without requiring a trace, making it faster for preliminary analysis.
+   Adjust `--model` and `--input-shape` to match your architecture.
 
 3. **Compare against measured traces**
 
