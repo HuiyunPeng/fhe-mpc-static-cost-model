@@ -52,7 +52,7 @@
         "in_channels": 1,
         "out_channels": 5
       },
-      "duration_sec": 0.06097245216369629
+      "duration_sec": 0.05965566635131836
     },
     {
       "op_id": 1,
@@ -85,7 +85,7 @@
         "in_features": 980,
         "out_features": 100
       },
-      "duration_sec": 0.10336828231811523
+      "duration_sec": 0.113189697265625
     },
     {
       "op_id": 2,
@@ -114,7 +114,7 @@
         "in_features": 100,
         "out_features": 10
       },
-      "duration_sec": 0.03517031669616699
+      "duration_sec": 0.03480219841003418
     }
   ],
   "primitives": [
@@ -129,7 +129,7 @@
         "level": 5,
         "embedding": "hybrid"
       },
-      "timestamp": 1763701529.901247
+      "timestamp": 1764615030.2122376
     },
     {
       "op_id": 0,
@@ -137,7 +137,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763701529.9426973
+      "timestamp": 1764615030.253058
     },
     {
       "op_id": 0,
@@ -146,7 +146,7 @@
         "amount": 4096,
         "in_place": false
       },
-      "timestamp": 1763701529.94607
+      "timestamp": 1764615030.2562962
     },
     {
       "op_id": 0,
@@ -155,7 +155,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763701529.9521694
+      "timestamp": 1764615030.2621214
     },
     {
       "op_id": 0,
@@ -164,7 +164,7 @@
         "amount": 2048,
         "in_place": false
       },
-      "timestamp": 1763701529.953954
+      "timestamp": 1764615030.263756
     },
     {
       "op_id": 0,
@@ -173,7 +173,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763701529.9597058
+      "timestamp": 1764615030.2694829
     },
     {
       "op_id": 0,
@@ -182,7 +182,7 @@
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763701529.9613755
+      "timestamp": 1764615030.2710528
     },
     {
       "op_id": null,
@@ -190,7 +190,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763701529.980486
+      "timestamp": 1764615031.348563
     },
     {
       "op_id": null,
@@ -198,7 +198,7 @@
       "params": {
         "origin": "mul_ciphertext"
       },
-      "timestamp": 1763701529.9955645
+      "timestamp": 1764615031.4555082
     },
     {
       "op_id": 1,
@@ -211,7 +211,7 @@
         "level": 3,
         "embedding": "hybrid"
       },
-      "timestamp": 1763701530.003384
+      "timestamp": 1764615031.4747343
     },
     {
       "op_id": 1,
@@ -219,7 +219,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763701530.0710514
+      "timestamp": 1764615031.5527654
     },
     {
       "op_id": 1,
@@ -228,7 +228,7 @@
         "amount": 4096,
         "in_place": false
       },
-      "timestamp": 1763701530.0738974
+      "timestamp": 1764615031.5556
     },
     {
       "op_id": 1,
@@ -237,7 +237,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763701530.07755
+      "timestamp": 1764615031.5592759
     },
     {
       "op_id": 1,
@@ -246,7 +246,7 @@
         "amount": 2048,
         "in_place": false
       },
-      "timestamp": 1763701530.0792205
+      "timestamp": 1764615031.561104
     },
     {
       "op_id": 1,
@@ -255,7 +255,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763701530.0828352
+      "timestamp": 1764615031.564844
     },
     {
       "op_id": 1,
@@ -264,7 +264,7 @@
         "amount": 1024,
         "in_place": false
       },
-      "timestamp": 1763701530.0843627
+      "timestamp": 1764615031.5664227
     },
     {
       "op_id": 1,
@@ -273,7 +273,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763701530.0883005
+      "timestamp": 1764615031.5699995
     },
     {
       "op_id": 1,
@@ -282,7 +282,7 @@
         "amount": 512,
         "in_place": false
       },
-      "timestamp": 1763701530.0899792
+      "timestamp": 1764615031.5715714
     },
     {
       "op_id": 1,
@@ -291,7 +291,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763701530.093751
+      "timestamp": 1764615031.5750413
     },
     {
       "op_id": 1,
@@ -300,7 +300,7 @@
         "amount": 256,
         "in_place": false
       },
-      "timestamp": 1763701530.0953407
+      "timestamp": 1764615031.5766265
     },
     {
       "op_id": 1,
@@ -309,7 +309,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763701530.0991552
+      "timestamp": 1764615031.5801544
     },
     {
       "op_id": 1,
@@ -318,7 +318,7 @@
         "amount": 128,
         "in_place": false
       },
-      "timestamp": 1763701530.1007316
+      "timestamp": 1764615031.5818594
     },
     {
       "op_id": 1,
@@ -327,7 +327,7 @@
         "kind": "ciphertext",
         "in_place": true
       },
-      "timestamp": 1763701530.1043236
+      "timestamp": 1764615031.5855713
     },
     {
       "op_id": 1,
@@ -336,7 +336,7 @@
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763701530.1059773
+      "timestamp": 1764615031.5871272
     },
     {
       "op_id": null,
@@ -344,7 +344,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763701530.106788
+      "timestamp": 1764615031.5879526
     },
     {
       "op_id": null,
@@ -352,7 +352,7 @@
       "params": {
         "origin": "mul_ciphertext"
       },
-      "timestamp": 1763701530.1107514
+      "timestamp": 1764615031.5918825
     },
     {
       "op_id": 2,
@@ -365,7 +365,7 @@
         "level": 1,
         "embedding": "hybrid"
       },
-      "timestamp": 1763701530.1151593
+      "timestamp": 1764615031.5964189
     },
     {
       "op_id": 2,
@@ -373,7 +373,7 @@
       "params": {
         "in_place": false
       },
-      "timestamp": 1763701530.1471863
+      "timestamp": 1764615031.628247
     },
     {
       "op_id": 2,
@@ -382,7 +382,7 @@
         "kind": "plaintext",
         "in_place": true
       },
-      "timestamp": 1763701530.1495214
+      "timestamp": 1764615031.630454
     }
   ]
 }

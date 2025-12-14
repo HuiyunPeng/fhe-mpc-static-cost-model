@@ -8,7 +8,13 @@ class NewEvaluator:
         self.scheme = scheme 
         self.backend = scheme.backend
         self.new_polynomial_evaluator()
-    
+
+    def _ciphertext_level(self, ctxt):
+        try:
+            return int(self.backend.GetCiphertextLevel(ctxt))
+        except Exception:
+            return None
+
     def _log_primitive(self, primitive, **params):
         tracer = getattr(self.scheme, "trace_logger", None)
         if tracer:
@@ -30,8 +36,12 @@ class NewEvaluator:
     def evaluate_polynomial(self, ciphertensor, poly, out_scale=None):
         out_scale = out_scale or self.scheme.params.get_default_scale()
         poly_depth = self.get_depth(poly)
-        self._log_primitive(
-            "PolyEval", poly_depth=poly_depth, out_scale=out_scale)
+        log_params = {"out_scale": out_scale}
+        if poly_depth is not None:
+            log_params["poly_depth"] = poly_depth
+        if len(ciphertensor.ids):
+            log_params["level"] = self._ciphertext_level(ciphertensor.ids[0])
+        self._log_primitive("PolyEval", **log_params)
 
         cts_out = []  
         for ctxt in ciphertensor.ids:
@@ -64,4 +74,8 @@ class NewEvaluator:
         return torch.split(coeffs_flat, splits)
 
     def get_depth(self, poly):
-        return self.backend.GetPolyDepth(poly)
+        # Older backends may not expose GetPolyDepth; treat as unknown.
+        getter = getattr(self.backend, "GetPolyDepth", None)
+        if getter is None:
+            return None
+        return getter(poly)

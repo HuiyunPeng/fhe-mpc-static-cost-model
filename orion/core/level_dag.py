@@ -20,7 +20,6 @@ class LevelDAG(nx.DiGraph):
         self.l_eff = l_eff
         self.network_dag = network_dag
         self.path = path
-        self.network_dag
         self.build_level_dag_from_path()
 
     def __add__(self, other):
