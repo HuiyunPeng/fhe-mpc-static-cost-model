@@ -98,7 +98,7 @@ pip install -e .
    python tools/primitive_level_peak_mem_estimator.py \
        --config configs/lola.yml \
        --trace data/lola_primitive_trace.json \
-       --csv-out data/lola_peak_estimated.csv
+       --csv-out data/lola_primitive_peak_mem.csv
    ```
    This approach analyzes individual primitive operations from the trace
    for fine-grained memory accounting.
@@ -106,10 +106,10 @@ pip install -e .
    **Operator-level estimation** (static, synthetic shapes):
    ```bash
    python tools/op_level_peak_mem_estimator.py \
-       --config configs/mlp.yml \
-       --model MLP \
-       --input-shape 1,784 \
-       --csv-out data/mlp_op_peak_mem.csv
+       --config configs/lola.yml \
+       --model LoLA \
+       --input-shape 1,1,28,28 \
+       --csv-out data/lola_op_peak_mem.csv
    ```
    This approach estimates per-operator memory directly from Orion model 
    metadata without requiring a trace, making it faster for preliminary analysis.
@@ -117,25 +117,69 @@ pip install -e .
 
 3. **Compare against measured traces**
 
-   Convert traces/estimates into a merged CSV and visualization:
+   After generating both primitive and operator-level estimates, create a comparison visualization. Before running the script, plotly is required for visualization:
+
+   ```bash
+    pip install plotly
+    pip install -U plotly[kaleido]
+    plotly_get_chrome
+   ```
+  
+    Then run:
+
+   ```bash
+    python tools/plot_peak_mem_bar.py \
+     --trace-json data/lola_primitive_trace.json \
+     --estimate-csv data/lola_op_peak_mem.csv \
+     --primitive-estimate-csv data/lola_primitive_peak_mem.csv \
+     --pdf-out data/lola_peak_mem_comparison.pdf
+   ```
+
+   Optionally merge trace and estimates into a detailed CSV report:
 
    ```bash
    python tools/trace_report.py \
-       data/lola_primitive_trace.json \
-       --estimate-csv data/lola_peak_estimated.csv \
-       --csv-out data/lola_ops_report.csv \
-       --pdf-out data/lola_ops_plot.pdf
-
-   python tools/plot_peak_mem_bar.py \
-       --trace-json data/lola_primitive_trace.json \
-       --estimate-csv data/lola_peak_estimated.csv \
-       --pdf-out data/lola_peak_mem_bar.pdf
+     data/lola_primitive_trace.json \
+     --estimate-csv data/lola_primitive_peak_mem.csv \
+     --csv-out data/lola_ops_report.csv \
+     --pdf-out data/lola_ops_plot.pdf
    ```
 
    The resulting CSV and PDF (or fallback HTML) show where the static
-   model over/underestimates peak ciphertext buffers, enabling rapid
+   models over/underestimate peak ciphertext buffers, enabling rapid
    iteration on packing strategies without repeatedly executing the FHE
-   workload.
+   workload. The grouped bar chart compares operator-level and
+   primitive-level estimates, and will include trace measurements only
+   if your trace JSON provides `peak_mem_bytes` per op.
+
+4. **To produce the figure for MLP case**
+Run both estimation scripts for MLP model:
+
+```bash
+python tools/primitive_level_peak_mem_estimator.py \
+    --config configs/mlp.yml \
+    --trace data/mlp_primitive_trace.json \
+    --csv-out data/mlp_primitive_peak_mem.csv
+```
+
+```bash
+python tools/op_level_peak_mem_estimator.py \
+    --config configs/mlp.yml \
+    --model MLP \
+    --input-shape 1,1,28,28 \
+    --csv-out data/mlp_op_peak_mem.csv
+```
+
+Then generate the comparison plot:
+
+```bash
+python tools/plot_peak_mem_bar.py \
+    --trace-json data/mlp_primitive_trace.json \
+    --estimate-csv data/mlp_op_peak_mem.csv \
+    --primitive-estimate-csv data/mlp_primitive_peak_mem.csv \
+    --pdf-out data/mlp_peak_mem_comparison.pdf
+```
+
 
 ## Configuration tips
 

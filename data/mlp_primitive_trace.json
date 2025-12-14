@@ -31,19 +31,17 @@
         "in_features": 784,
         "out_features": 128
       },
-      "duration_sec": 0.18484711647033691,
-      "peak_mem_bytes": 6897664,
-      "peak_mem_samples": 169
+      "duration_sec": 0.17289185523986816,
+      "peak_mem_bytes": 20971520,
+      "peak_mem_samples": 162
     },
     {
       "op_id": 1,
       "op_type": "Quad",
       "name": "act1",
-      "params": {
-        "level": 4
-      },
-      "duration_sec": 0.013510465621948242,
-      "peak_mem_bytes": 540672,
+      "params": {},
+      "duration_sec": 0.01381373405456543,
+      "peak_mem_bytes": 0,
       "peak_mem_samples": 13
     },
     {
@@ -73,20 +71,18 @@
         "in_features": 128,
         "out_features": 128
       },
-      "duration_sec": 0.12698769569396973,
-      "peak_mem_bytes": 266240,
-      "peak_mem_samples": 116
+      "duration_sec": 0.12028741836547852,
+      "peak_mem_bytes": 10485760,
+      "peak_mem_samples": 113
     },
     {
       "op_id": 3,
       "op_type": "Quad",
       "name": "act2",
-      "params": {
-        "level": 2
-      },
-      "duration_sec": 0.00954294204711914,
-      "peak_mem_bytes": 0,
-      "peak_mem_samples": 9
+      "params": {},
+      "duration_sec": 0.011327266693115234,
+      "peak_mem_bytes": 1048576,
+      "peak_mem_samples": 11
     },
     {
       "op_id": 4,
@@ -115,9 +111,9 @@
         "in_features": 128,
         "out_features": 10
       },
-      "duration_sec": 0.043261051177978516,
-      "peak_mem_bytes": 0,
-      "peak_mem_samples": 39
+      "duration_sec": 0.04269123077392578,
+      "peak_mem_bytes": 5242880,
+      "peak_mem_samples": 40
     }
   ],
   "primitives": [
@@ -132,164 +128,148 @@
         "level": 5,
         "embedding": "hybrid"
       },
-      "timestamp": 1764619035.9410148
+      "timestamp": 1763761587.566543
     },
     {
       "op_id": 0,
       "primitive": "Rescale",
       "params": {
-        "in_place": false,
-        "level": 4
+        "in_place": false
       },
-      "timestamp": 1764619036.0594137
+      "timestamp": 1763761587.6672988
     },
     {
       "op_id": 0,
       "primitive": "HRot",
       "params": {
         "amount": 4096,
-        "in_place": false,
-        "level": 4
+        "in_place": false
       },
-      "timestamp": 1764619036.061065
+      "timestamp": 1763761587.673005
     },
     {
       "op_id": 0,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 4
+        "in_place": true
       },
-      "timestamp": 1764619036.0688648
+      "timestamp": 1763761587.6798277
     },
     {
       "op_id": 0,
       "primitive": "HRot",
       "params": {
         "amount": 2048,
-        "in_place": false,
-        "level": 4
+        "in_place": false
       },
-      "timestamp": 1764619036.0714216
+      "timestamp": 1763761587.68376
     },
     {
       "op_id": 0,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 4
+        "in_place": true
       },
-      "timestamp": 1764619036.0793948
+      "timestamp": 1763761587.690565
     },
     {
       "op_id": 0,
       "primitive": "HRot",
       "params": {
         "amount": 1024,
-        "in_place": false,
-        "level": 4
+        "in_place": false
       },
-      "timestamp": 1764619036.081913
+      "timestamp": 1763761587.6944995
     },
     {
       "op_id": 0,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 4
+        "in_place": true
       },
-      "timestamp": 1764619036.0896332
+      "timestamp": 1763761587.7012424
     },
     {
       "op_id": 0,
       "primitive": "HRot",
       "params": {
         "amount": 512,
-        "in_place": false,
-        "level": 4
+        "in_place": false
       },
-      "timestamp": 1764619036.0921953
+      "timestamp": 1763761587.705147
     },
     {
       "op_id": 0,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 4
+        "in_place": true
       },
-      "timestamp": 1764619036.1005347
+      "timestamp": 1763761587.7119882
     },
     {
       "op_id": 0,
       "primitive": "HRot",
       "params": {
         "amount": 256,
-        "in_place": false,
-        "level": 4
+        "in_place": false
       },
-      "timestamp": 1764619036.1031122
+      "timestamp": 1763761587.7159307
     },
     {
       "op_id": 0,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 4
+        "in_place": true
       },
-      "timestamp": 1764619036.1113303
+      "timestamp": 1763761587.72279
     },
     {
       "op_id": 0,
       "primitive": "HRot",
       "params": {
         "amount": 128,
-        "in_place": false,
-        "level": 4
+        "in_place": false
       },
-      "timestamp": 1764619036.1140542
+      "timestamp": 1763761587.7267098
     },
     {
       "op_id": 0,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 4
+        "in_place": true
       },
-      "timestamp": 1764619036.1222112
+      "timestamp": 1763761587.7335236
     },
     {
       "op_id": 0,
       "primitive": "HAdd",
       "params": {
         "kind": "plaintext",
-        "in_place": true,
-        "level": 4
+        "in_place": true
       },
-      "timestamp": 1764619036.1249633
+      "timestamp": 1763761587.737454
     },
     {
       "op_id": 1,
       "primitive": "HMult",
       "params": {
-        "in_place": false,
-        "level": 4
+        "in_place": false
       },
-      "timestamp": 1764619036.1297605
+      "timestamp": 1763761587.7404544
     },
     {
       "op_id": 1,
       "primitive": "Rescale",
       "params": {
-        "origin": "mul_ciphertext",
-        "level": 3
+        "origin": "mul_ciphertext"
       },
-      "timestamp": 1764619036.1396682
+      "timestamp": 1763761587.7474303
     },
     {
       "op_id": 2,
@@ -302,164 +282,148 @@
         "level": 3,
         "embedding": "hybrid"
       },
-      "timestamp": 1764619036.1438658
+      "timestamp": 1763761587.7569754
     },
     {
       "op_id": 2,
       "primitive": "Rescale",
       "params": {
-        "in_place": false,
-        "level": 2
+        "in_place": false
       },
-      "timestamp": 1764619036.2200105
+      "timestamp": 1763761587.8183727
     },
     {
       "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 4096,
-        "in_place": false,
-        "level": 2
+        "in_place": false
       },
-      "timestamp": 1764619036.2217333
+      "timestamp": 1763761587.8235688
     },
     {
       "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 2
+        "in_place": true
       },
-      "timestamp": 1764619036.2273781
+      "timestamp": 1763761587.8282816
     },
     {
       "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 2048,
-        "in_place": false,
-        "level": 2
+        "in_place": false
       },
-      "timestamp": 1764619036.2300224
+      "timestamp": 1763761587.8321874
     },
     {
       "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 2
+        "in_place": true
       },
-      "timestamp": 1764619036.2356217
+      "timestamp": 1763761587.8369195
     },
     {
       "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 1024,
-        "in_place": false,
-        "level": 2
+        "in_place": false
       },
-      "timestamp": 1764619036.2382178
+      "timestamp": 1763761587.8408213
     },
     {
       "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 2
+        "in_place": true
       },
-      "timestamp": 1764619036.2436564
+      "timestamp": 1763761587.8455217
     },
     {
       "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 512,
-        "in_place": false,
-        "level": 2
+        "in_place": false
       },
-      "timestamp": 1764619036.2461245
+      "timestamp": 1763761587.8494108
     },
     {
       "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 2
+        "in_place": true
       },
-      "timestamp": 1764619036.2516036
+      "timestamp": 1763761587.8541214
     },
     {
       "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 256,
-        "in_place": false,
-        "level": 2
+        "in_place": false
       },
-      "timestamp": 1764619036.2540777
+      "timestamp": 1763761587.8580325
     },
     {
       "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 2
+        "in_place": true
       },
-      "timestamp": 1764619036.2596054
+      "timestamp": 1763761587.8627448
     },
     {
       "op_id": 2,
       "primitive": "HRot",
       "params": {
         "amount": 128,
-        "in_place": false,
-        "level": 2
+        "in_place": false
       },
-      "timestamp": 1764619036.262075
+      "timestamp": 1763761587.8666582
     },
     {
       "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "ciphertext",
-        "in_place": true,
-        "level": 2
+        "in_place": true
       },
-      "timestamp": 1764619036.2675066
+      "timestamp": 1763761587.8713946
     },
     {
       "op_id": 2,
       "primitive": "HAdd",
       "params": {
         "kind": "plaintext",
-        "in_place": true,
-        "level": 2
+        "in_place": true
       },
-      "timestamp": 1764619036.269989
+      "timestamp": 1763761587.8752873
     },
     {
       "op_id": 3,
       "primitive": "HMult",
       "params": {
-        "in_place": false,
-        "level": 2
+        "in_place": false
       },
-      "timestamp": 1764619036.273859
+      "timestamp": 1763761587.8783576
     },
     {
       "op_id": 3,
       "primitive": "Rescale",
       "params": {
-        "origin": "mul_ciphertext",
-        "level": 1
+        "origin": "mul_ciphertext"
       },
-      "timestamp": 1764619036.280139
+      "timestamp": 1763761587.8832421
     },
     {
       "op_id": 4,
@@ -472,26 +436,24 @@
         "level": 1,
         "embedding": "hybrid"
       },
-      "timestamp": 1764619036.284209
+      "timestamp": 1763761587.8946633
     },
     {
       "op_id": 4,
       "primitive": "Rescale",
       "params": {
-        "in_place": false,
-        "level": 0
+        "in_place": false
       },
-      "timestamp": 1764619036.3249907
+      "timestamp": 1763761587.9307933
     },
     {
       "op_id": 4,
       "primitive": "HAdd",
       "params": {
         "kind": "plaintext",
-        "in_place": true,
-        "level": 0
+        "in_place": true
       },
-      "timestamp": 1764619036.3266242
+      "timestamp": 1763761587.9353843
     }
   ]
 }

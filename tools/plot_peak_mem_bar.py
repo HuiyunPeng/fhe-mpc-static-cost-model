@@ -196,12 +196,16 @@ def main() -> None:
         fig.write_image(str(pdf_path), format="pdf")
         print(f"Wrote PDF to {pdf_path}")
     except Exception as exc:
-        print(f"Error writing PDF: {exc}")
-        # Fallback to HTML
-        html_path = pdf_path.with_suffix('.html')
-        fig.write_html(str(html_path))
-        print(f"Could not create PDF, saved interactive HTML to {html_path}")
-        print("To create PDFs, install with: pip install -U plotly[kaleido]")
+        # Fall back to an interactive HTML report when kaleido is unavailable.
+        fig.write_html(str(html_path), include_plotlyjs="cdn")
+        details = str(exc).strip() or "Unknown PDF export error."
+        print(
+            "PDF export failed. "
+            "If you need a PDF, install Plotly with kaleido and ensure Chrome is available "
+            "(e.g., run `pip install -U \"plotly[kaleido]\"` and `plotly_get_chrome`). "
+            f"Error: {details}\n"
+            f"Wrote HTML instead: {html_path}"
+        )
 
 
 if __name__ == "__main__":
