@@ -7,6 +7,7 @@ Example usage:
     python tools/plot_peak_mem_bar.py \
         --trace-json data/mlp_primitive_trace.json \
         --estimate-csv data/mlp_peak_estimated.csv \
+        --primitive-estimate-csv data/mlp_primitive_est_peak_mem.csv \
         --pdf-out data/mlp_peak_mem_bar.pdf
 """
 
@@ -20,12 +21,12 @@ from trace_report import load_estimates, load_ops
 def op_key(op: Dict) -> Tuple[str, Hashable]:
     """
     Generate a stable key to align estimate rows with trace rows.
-    Preference order: op_id -> name -> op_type.
+    Preference order: name -> op_id -> op_type (name first to handle renumbered traces).
     """
-    if op.get("op_id") is not None:
-        return ("id", op["op_id"])
     if op.get("name"):
         return ("name", op["name"])
+    if op.get("op_id") is not None:
+        return ("id", op["op_id"])
     return ("type", op.get("op_type"))
 
 
@@ -49,7 +50,12 @@ def build_series(ops: List[Dict]) -> Dict[Tuple[str, Hashable], Dict]:
     return series
 
 
-def build_figure(labels: List[str], actual: List[float], estimated: List[float]):
+def build_figure(
+    labels: List[str],
+    actual: List[float],
+    estimated: List[float],
+    primitive_estimated: List[float],
+):
     try:
         import plotly.graph_objects as go
     except ImportError as exc:
@@ -66,11 +72,18 @@ def build_figure(labels: List[str], actual: List[float], estimated: List[float])
         marker_color="#1f77b4",
     )
     fig.add_bar(
-        name="Estimated Peak Memory (MiB)",
+        name="PyTorch Ops Estimated Peak Memory (MiB)",
         x=labels,
         y=estimated,
         marker_color="#ff7f0e",
         opacity=0.85,
+    )
+    fig.add_bar(
+        name="Crypto Primitive Estimated Peak Memory (MiB)",
+        x=labels,
+        y=primitive_estimated,
+        marker_color="#2ca02c",
+        opacity=0.75,
     )
 
     fig.update_layout(
@@ -80,7 +93,7 @@ def build_figure(labels: List[str], actual: List[float], estimated: List[float])
         legend=dict(
             orientation="h",
             yanchor="bottom",
-            y=-0.4,
+            y=-0.75,
             xanchor="center",
             x=0.5,
             font=dict(size=14),
@@ -88,7 +101,7 @@ def build_figure(labels: List[str], actual: List[float], estimated: List[float])
         font=dict(size=14),
         template="plotly_white",
         bargap=0.25,
-        margin=dict(b=140),
+        margin=dict(b=140, t=40, l=60, r=20),
     )
     fig.update_xaxes(
         tickangle=-30,
@@ -117,44 +130,82 @@ def main() -> None:
         help="Path to the estimated peak memory CSV (e.g., data/mlp_peak_estimated.csv).",
     )
     parser.add_argument(
+        "--primitive-estimate-csv",
+        required=True,
+        type=Path,
+        help="Path to the primitive estimated peak memory CSV (e.g., data/mlp_primitive_est_peak_mem.csv).",
+    )
+    parser.add_argument(
         "--pdf-out",
         type=Path,
         help="Where to write the PDF figure (defaults beside the trace JSON).",
+    )
+    parser.add_argument(
+        "--html-out",
+        type=Path,
+        help="Optional HTML output path (written if PDF export is unavailable).",
     )
     args = parser.parse_args()
 
     trace_ops = load_ops(args.trace_json, source=args.trace_json.stem, series="actual")
     est_ops = load_estimates(args.estimate_csv, source=args.estimate_csv.stem)
+    primitive_est_ops = load_estimates(
+        args.primitive_estimate_csv, source=args.primitive_estimate_csv.stem
+    )
 
     trace_series = build_series(trace_ops)
     est_series = build_series(est_ops)
+    primitive_est_series = build_series(primitive_est_ops)
 
-    all_keys = list({*trace_series.keys(), *est_series.keys()})
-    all_keys.sort(key=lambda item: (item[0], item[1]))
+    trace_keys = list(trace_series.keys())
+    all_keys = trace_keys + sorted(
+        {
+            *est_series.keys(),
+            *primitive_est_series.keys(),
+        }
+        - set(trace_keys)
+    )
 
     labels: List[str] = []
     actual_mib: List[float] = []
     estimated_mib: List[float] = []
+    primitive_est_mib: List[float] = []
     for key in all_keys:
         actual_entry = trace_series.get(key) or {}
         est_entry = est_series.get(key) or {}
-        label = actual_entry.get("label") or est_entry.get("label") or str(key[1])
+        primitive_est_entry = primitive_est_series.get(key) or {}
+        label = (
+            actual_entry.get("label")
+            or est_entry.get("label")
+            or primitive_est_entry.get("label")
+            or str(key[1])
+        )
         labels.append(label)
         actual_mib.append(actual_entry.get("mib", 0.0))
         estimated_mib.append(est_entry.get("mib", 0.0))
+        primitive_est_mib.append(primitive_est_entry.get("mib", 0.0))
 
-    fig = build_figure(labels, actual_mib, estimated_mib)
+    fig = build_figure(labels, actual_mib, estimated_mib, primitive_est_mib)
 
-    pdf_path = args.pdf_out or args.trace_json.with_name(f"{args.trace_json.stem}_peak_mem_bar.pdf")
+    pdf_path = args.pdf_out or args.trace_json.with_name(
+        f"{args.trace_json.stem}_peak_mem_bar.pdf"
+    )
+    html_path = args.html_out or pdf_path.with_suffix(".html")
 
     try:
         fig.write_image(str(pdf_path), format="pdf")
         print(f"Wrote PDF to {pdf_path}")
     except Exception as exc:
-        raise SystemExit(
-            "Creating a PDF requires the Plotly static image engine "
-            "(install with `pip install -U plotly[kaleido]`)."
-        ) from exc
+        # Fall back to an interactive HTML report when kaleido is unavailable.
+        fig.write_html(str(html_path), include_plotlyjs="cdn")
+        details = str(exc).strip() or "Unknown PDF export error."
+        print(
+            "PDF export failed. "
+            "If you need a PDF, install Plotly with kaleido and ensure Chrome is available "
+            "(e.g., run `pip install -U \"plotly[kaleido]\"` and `plotly_get_chrome`). "
+            f"Error: {details}\n"
+            f"Wrote HTML instead: {html_path}"
+        )
 
 
 if __name__ == "__main__":
